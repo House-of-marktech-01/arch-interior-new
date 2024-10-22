@@ -6,11 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        ethereal: ["Ethereal", "sans-serif"], 
+        cormorant: ["'Cormorant Garamond'", "serif"],
+      },
       colors: {
-        primaryRed: '#ed3237',
-        primaryBlue: '#012060' // You can name this color anything, e.g., 'customRed'
+        primaryRed: "#ed3237",
+        primaryBlue: "#012060",
       },
     },
   },
   plugins: [],
-}
+};
