@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden transition-all ease-in-out">
+        <div className="md:hidden absolute z-20 shadow-md rounded-lg top-[60px] right-0 transition-all ease-in-out">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="/about"
