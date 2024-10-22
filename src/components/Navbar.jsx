@@ -50,12 +50,7 @@ export default function Navbar() {
               >
                 Blog
               </Link>
-              <Link
-                to="/contact"
-                className="text-gray-600 hover:text-primaryRed px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Contact Us
-              </Link>
+              
               <Link
                 to="/industrial-prefab"
                 className="text-gray-600 hover:text-primaryRed px-3 py-2 rounded-md text-sm font-medium"
@@ -123,12 +118,6 @@ export default function Navbar() {
               className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
             >
               Blog
-            </Link>
-            <Link
-              to="/contact"
-              className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Contact Us
             </Link>
             <Link
               to="/industrial-prefab"
