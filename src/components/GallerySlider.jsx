@@ -111,7 +111,7 @@ const GallerySlider = () => {
         <button
           onClick={() => handleGalleryChange("livingRoom")}
           className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "livingRoom" ? "underline text-red-500" : ""
+            selectedGallery === "livingRoom" ? "underline text-[#d9ac30]" : ""
           }`}
         >
           LIVING ROOM
@@ -119,7 +119,7 @@ const GallerySlider = () => {
         <button
           onClick={() => handleGalleryChange("diningRoom")}
           className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "diningRoom" ? "underline text-red-500" : ""
+            selectedGallery === "diningRoom" ? "underline text-[#d9ac30]" : ""
           }`}
         >
           DINING ROOM
@@ -127,7 +127,7 @@ const GallerySlider = () => {
         <button
           onClick={() => handleGalleryChange("bedroom")}
           className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "bedroom" ? "underline text-red-500" : ""
+            selectedGallery === "bedroom" ? "underline text-[#d9ac30]" : ""
           }`}
         >
           BEDROOM
@@ -135,7 +135,7 @@ const GallerySlider = () => {
         <button
           onClick={() => handleGalleryChange("office")}
           className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "office" ? "underline text-red-500" : ""
+            selectedGallery === "office" ? "underline text-[#d9ac30]" : ""
           }`}
         >
           OFFICE

@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="flex space-x-2 md:hidden">
             <Link
               to="/contact"
-              className="bg-primaryRed text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-primaryBlue transition duration-300"
+              className="bg-[#a5862f] text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-primaryBlue transition duration-300"
             >
               Contact Us
             </Link>

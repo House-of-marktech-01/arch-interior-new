@@ -3,7 +3,7 @@ import homehero from "../assets/images/homehero.png";
 
 const Schedule = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center p-8 bg-slate-200 rounded-lg shadow-lg">
+    <div className="flex flex-col md:flex-row justify-between items-center p-8 bg-slate-200 rounded-lg shadow-lg h-[100vh]">
       {/* Image Section */}
       <div className="flex-1 mb-6 md:mb-0 md:mr-8">
         <img
