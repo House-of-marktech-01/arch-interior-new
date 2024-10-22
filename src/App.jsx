@@ -1,5 +1,3 @@
-
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -9,6 +7,7 @@ import Contact from './pages/Contact';
 import IndustrialPreFab from './pages/IndustrialPreFab';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
+import Footer from './components/Footer';
 
 function App() {
 
@@ -25,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/industrial-prefab" element={<IndustrialPreFab />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   )
