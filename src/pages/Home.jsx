@@ -1,3 +1,4 @@
+import FeaturedClients from "../components/FeaturedClients";
 import GallerySlider from "../components/GallerySlider";
 import HomeHero from "../components/HomeHero";
 import Schedule from "../components/Schedule";
@@ -10,6 +11,7 @@ const Home = () => {
       <GallerySlider/>
       <Schedule/>
       <Testimonials/>
+      <FeaturedClients/>
     </div>
   );
 };

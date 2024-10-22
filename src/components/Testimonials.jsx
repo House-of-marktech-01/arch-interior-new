@@ -99,14 +99,14 @@ const Testimonials = () => {
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full"
+                  className="w-24 h-24 rounded-full"
                 />
                 <div>
-                  <h3 className="text-lg font-bold">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.title}</p>
+                  <h3 className="text-xl py-4 ">{testimonial.title}</h3>
+                  <p className="text-gray-700">{testimonial.feedback}</p>
+                  <p className="text-sm py-4 text-gray-500">{testimonial.name}</p>
                 </div>
               </div>
-              <p className="text-gray-700">{testimonial.feedback}</p>
             </div>
           ))}
         </div>
