@@ -16,7 +16,7 @@ const HomeHero = () => {
           <p className="text-xl mb-6 italic font-cormorant text-white">
             Discover a world of creative designs tailored just for you.
           </p>
-          <button className="bg-[#a5862f] text-white py-3 px-8 rounded-md shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:opacity-90">
+          <button className="bg-[#ED3237] font-mono    text-white py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:opacity-90">
             START MY TRANSFORMATION
           </button>
         </div>

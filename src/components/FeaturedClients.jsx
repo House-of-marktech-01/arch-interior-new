@@ -8,7 +8,7 @@ const FeaturedClients = () => {
       <h2 className="text-3xl font-bold text-gray-800 mb-8">
         Featured Clients
       </h2>
-      <div className="flex flex-wrap justify-center items-center gap-8">
+      <div className="flex flex-wrap justify-center items-center gap-16">
         <img
           src={logo1}
           alt="HGTV"
@@ -34,11 +34,7 @@ const FeaturedClients = () => {
           alt="The Wall Street Journal"
           className="w-48 h-auto object-contain transition-transform duration-300 hover:scale-105"
         />
-        <img
-          src={logo3}
-          alt="The New York Times"
-          className="w-40 h-auto object-contain transition-transform duration-300 hover:scale-105"
-        />
+       
       </div>
     </div>
   );
