@@ -18,7 +18,7 @@ const Schedule = () => {
         <h2 className="text-3xl md:text-5xl font-cormorant font-bold mb-6 text-gray-900">
           Think you can't afford beautiful interior design? Think again.
         </h2>
-        <button className="py-3 px-8 bg-[#a5862f] text-white text-lg rounded-lg shadow-lg hover:bg-[#5e4c1a] transition duration-300">
+        <button className="py-3 px-8 bg-[#ED3237] font-mono  text-white text-lg rounded-full shadow-lg hover:bg-[#000000] transition duration-300">
           SCHEDULE A CONSULTATION
         </button>
       </div>

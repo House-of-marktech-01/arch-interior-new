@@ -65,7 +65,7 @@ export default function Navbar() {
             </div>
             <Link
               to="/contact"
-              className="bg-[#a5862f] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#5e4c1a] transition duration-300"
+              className="bg-[#ED3237] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#000000] transition duration-300"
             >
               Contact Us
             </Link>
@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="flex space-x-2 md:hidden">
             <Link
               to="/contact"
-              className="bg-[#a5862f] text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-primaryBlue transition duration-300"
+              className="bg-[#ED3237] text-white block px-3 py-2 rounded-full text-base font-medium hover:bg-primaryBlue transition duration-300"
             >
               Contact Us
             </Link>
@@ -102,37 +102,37 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="/about"
-              className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-[#ED3237] block px-3 py-2 rounded-md text-base font-medium"
             >
               About Us
             </Link>
             <Link
               to="/services"
-              className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-[#ED3237] block px-3 py-2 rounded-md text-base font-medium"
             >
               Services
             </Link>
             <Link
               to="/portfolio"
-              className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-[#ED3237] block px-3 py-2 rounded-md text-base font-medium"
             >
               Portfolio
             </Link>
             <Link
               to="/blog"
-              className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-[#ED3237] block px-3 py-2 rounded-md text-base font-medium"
             >
               Blog
             </Link>
             <Link
               to="/contact"
-              className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-[#ED3237] block px-3 py-2 rounded-md text-base font-medium"
             >
               Contact Us
             </Link>
             <Link
               to="/industrial-prefab"
-              className="text-gray-600 hover:text-[#a5862f] block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-600 hover:text-[#ED3237] block px-3 py-2 rounded-md text-base font-medium"
             >
               Industrial Pre-fab Work
             </Link>
