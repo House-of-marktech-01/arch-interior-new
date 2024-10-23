@@ -63,7 +63,7 @@ const services = [
 
 export default function ServicesList() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen ">
       <header className="">
         <div className="relative flex items-center justify-center h-[50vh] bg-gray-100">
           <img
@@ -98,7 +98,7 @@ export default function ServicesList() {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className="bg-white overflow-hidden shadow rounded-lg"
+                  className="overflow-hidden shadow-lg"
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
@@ -114,7 +114,7 @@ export default function ServicesList() {
                       <div className="flex-shrink-0 rounded-md p-3 text-primaryRed">
                         {service.icon}
                       </div>
-                      <h3 className="ml-3 text-2xl font-medium text-gray-900 font-cormorant">
+                      <h3 className="ml-3 text-2xl font-medium font-cormorant">
                         {service.title}
                       </h3>
                     </div>

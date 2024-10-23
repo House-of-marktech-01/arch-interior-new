@@ -116,12 +116,7 @@ const GallerySlider = () => {
   return (
     <div className="w-full h-full bg-black text-white flex flex-col justify-between">
       {/* Heading */}
-      <motion.h1
-        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-8 sm:my-12 lg:my-16 text-gray-100 font-cormorant"
-        initial={{ opacity: 0, y: -50 }} // Heading slide-in animation from top
-        animate={{ opacity: 1, y: 0 }} // Final state
-        transition={{ duration: 0.5 }} // Animation duration
-      >
+      <h1 className="text-center text-6xl my-16 text-gray-900 font-cormorant ">
         Explore Real Spaces We've Transformed
       </motion.h1>
 
