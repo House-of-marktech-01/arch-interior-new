@@ -73,7 +73,7 @@ const Testimonials = () => {
   }, [currentIndex]);
 
   return (
-    <div className="bg-slate-200 py-12 h-[60vh]">
+    <div className=" py-12 h-[60vh]">
       <h2 className="text-4xl font-bold text-center mb-8">Testimonials</h2>
       <div className="relative flex justify-center items-center">
         {/* Left Arrow */}

@@ -17,10 +17,10 @@ export function Project() {
   );
 
   return (
-    <div className="w-full bg-slate-200">
+    <div className="w-full ">
       {/* Header */}
       <div className="flex h-[70vh] font-serif bg-cover mb-10 object-cover bg-no-repeat bg-[url('/assets/images/livingroom2.png')] ">
-        <h1 className="w-1/5 p-4  text-4xl rounded-t-lg mx-auto text-center text-[#292f36] self-end bg-slate-200">
+        <h1 className="w-1/5 p-4  text-4xl rounded-t-lg mx-auto text-center text-[#292f36] self-end ">
           Our Projects
           {/* <p className="text-gray-500 text-sm font-sans">Home / Project</p> */}
         </h1>

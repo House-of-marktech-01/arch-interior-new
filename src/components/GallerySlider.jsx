@@ -100,7 +100,7 @@ const GallerySlider = () => {
   };
 
   return (
-    <div className="w-full h-full bg-slate-200 flex flex-col justify-between">
+    <div className="w-full h-full  flex flex-col justify-between">
       {/* Heading */}
       <h1 className="text-center text-6xl my-16 text-gray-900 font-cormorant ">
         Explore Real Spaces We've Transformed
