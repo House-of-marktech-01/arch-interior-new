@@ -1,0 +1,84 @@
+{
+  "projects": [
+    {
+      "project_name": "Living Room 1",
+      "category": "livingRoom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Living Room 2",
+      "category": "livingRoom",
+      "image": "/assets/images/livingroom2.png"
+    },
+    {
+      "project_name": "Living Room 3",
+      "category": "livingRoom",
+      "image": "/assets/images/livingroom3.png"
+    },
+    {
+      "project_name": "Living Room 4",
+      "category": "livingRoom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Dining Room 1",
+      "category": "diningRoom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Dining Room 2",
+      "category": "diningRoom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Dining Room 3",
+      "category": "diningRoom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Dining Room 4",
+      "category": "diningRoom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Bedroom 1",
+      "category": "bedroom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Bedroom 2",
+      "category": "bedroom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Bedroom 3",
+      "category": "bedroom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Bedroom 4",
+      "category": "bedroom",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Office 1",
+      "category": "office",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Office 2",
+      "category": "office",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Office 3",
+      "category": "office",
+      "image": "/assets/images/livingroom1.png"
+    },
+    {
+      "project_name": "Office 4",
+      "category": "office",
+      "image": "/assets/images/livingroom1.png"
+    }
+  ]
+}

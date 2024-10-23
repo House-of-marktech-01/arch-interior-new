@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import arrow icons
-import galleryimage1 from "../assets/images/livingroom1.png";
-import galleryimage2 from "../assets/images/livingroom2.png";
-import galleryimage3 from "../assets/images/livingroom3.png";
-import galleryimage4 from "../assets/images/livingroom2.png";
+import galleryimage1 from "/assets/images/livingroom1.png";
+import galleryimage2 from "/assets/images/livingroom2.png";
+import galleryimage3 from "/assets/images/livingroom3.png";
+import galleryimage4 from "/assets/images/livingroom2.png";
 
 const GallerySlider = () => {
   const [selectedGallery, setSelectedGallery] = useState("livingRoom");

@@ -1,9 +1,11 @@
-import React from 'react'
+import { Project } from '../components/Project'
+import Testimonials from '../components/Testimonials'
 
 const Portfolio = () => {
   return (
     <div>
-      Portfolio
+     <Project/>
+     <Testimonials/>
     </div>
   )
 }

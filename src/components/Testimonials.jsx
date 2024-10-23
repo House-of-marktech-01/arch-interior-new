@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // For navigation arrows
-import profile from "../assets/images/livingroom2.png";
+import profile from "/assets/images/livingroom2.png";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

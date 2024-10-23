@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Linkedin, Mail, LocateIcon, MapPin, Phone } from "lucide-react";
-import logo from "../assets/images/RCH.png";
+import logo from "/assets/images/RCH.png";
 export default function Footer() {
     return (
         <footer className="bg-white">

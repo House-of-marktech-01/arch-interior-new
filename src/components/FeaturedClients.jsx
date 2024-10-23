@@ -1,6 +1,6 @@
-import logo1 from "../assets/images/hgtv-logo.png";
-import logo2 from "../assets/images/the-wall-street-journal-logo.png";
-import logo3 from "../assets/images/nyt-logo-379x64.png";
+import logo1 from "/assets/images/hgtv-logo.png";
+import logo2 from "/assets/images/the-wall-street-journal-logo.png";
+import logo3 from "/assets/images/nyt-logo-379x64.png";
 
 const FeaturedClients = () => {
   return (
