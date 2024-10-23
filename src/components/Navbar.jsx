@@ -10,7 +10,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow-md">
+    <nav className="fixed w-full top-0 z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -28,32 +28,32 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-2 lg:space-x-4">
               <Link
                 to="/about"
-                className="text-gray-600 hover:text-primaryRed px-3 py-2 rounded-md text-sm font-medium"
+                className="text-white font-ethereal hover:text-primaryRed px-3 py-2 rounded-md text-sm "
               >
                 About Us
               </Link>
               <Link
                 to="/services"
-                className="text-gray-600 hover:text-primaryRed px-3 py-2 rounded-md text-sm font-medium"
+                className="text-white font-ethereal hover:text-primaryRed px-3 py-2 rounded-md text-sm "
               >
                 Services
               </Link>
               <Link
                 to="/portfolio"
-                className="text-gray-600 hover:text-primaryRed px-3 py-2 rounded-md text-sm font-medium"
+                className="text-white font-ethereal hover:text-primaryRed px-3 py-2 rounded-md text-sm "
               >
                 Portfolio
               </Link>
               <Link
                 to="/blog"
-                className="text-gray-600 hover:text-primaryRed px-3 py-2 rounded-md text-sm font-medium"
+                className="text-white font-ethereal hover:text-primaryRed px-3 py-2 rounded-md text-sm "
               >
                 Blog
               </Link>
               
               <Link
                 to="/industrial-prefab"
-                className="text-gray-600 hover:text-primaryRed px-3 py-2 rounded-md text-sm font-medium"
+                className="text-white font-ethereal hover:text-primaryRed px-3 py-2 rounded-md text-sm "
               >
                 Pre-fab
               </Link>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import livingroom from "/assets/images/livingroom3.png";
-import profile from "/assets/images/profile.webp";
+import profile from "/assets/images/profile.jpg";
 import { Users, Target, Award } from "lucide-react";
 
 const teamMembers = [
@@ -45,6 +45,8 @@ export default function About() {
       </header>
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -12,49 +12,54 @@ import livingroom1 from "/assets/images/livingroom1.png";
 import livingroom2 from "/assets/images/livingroom2.png";
 import livingroom3 from "/assets/images/livingroom3.png";
 import homehero from "/assets/images/homehero.png";
+import { MdKitchen } from "react-icons/md";
 
+// Architectural Service, Interior Design, Modular Kitchen, Pre-Fabrication, Land Scaping, Commercial Design, Residential Work
 const services = [
-  {
-    title: "Architectural Services",
-    description: "Innovative designs that blend form and function seamlessly.",
-    icon: <Building2 className="h-6 w-6" />,
-    image: livingroom1,
-  },
-  {
-    title: "Interior Design",
-    description: "Create spaces that inspire and reflect your unique style.",
-    icon: <PenTool className="h-6 w-6" />,
-    image: livingroom2,
-  },
-  {
-    title: "Construction",
-    description:
-      "Bringing architectural visions to life with precision and care.",
-    icon: <Hammer className="h-6 w-6" />,
-    image: livingroom3,
-  },
-  {
-    title: "Renovation",
-    description:
-      "Breathe new life into existing spaces with our expert renovations.",
-    icon: <Home className="h-6 w-6" />,
-    image: livingroom2,
-  },
-  {
-    title: "Land Development",
-    description:
-      "Transforming landscapes into thriving communities and spaces.",
-    icon: <Mountain className="h-6 w-6" />,
-    image: livingroom3,
-  },
-  {
-    title: "Consultancy",
-    description:
-      "Expert advice to guide your project from concept to completion.",
-    icon: <Users className="h-6 w-6" />,
-    image: livingroom1,
-  },
-];
+    {
+      title: "Architectural Services",
+      description: "Crafting innovative structures that prioritize both aesthetics and functionality.",
+      icon: <Building2 className="h-6 w-6" />,
+      image: livingroom1,
+    },
+    {
+      title: "Interior Design",
+      description: "Designing personalized interiors that elevate your living or working space.",
+      icon: <PenTool className="h-6 w-6" />,
+      image: livingroom2,
+    },
+    {
+      title: "Modular Kitchen",
+      description: "Design and install modern, efficient kitchens tailored to your lifestyle.",
+      icon: <MdKitchen className="h-6 w-6" />,
+      image: livingroom3,
+    },
+    {
+      title: "Pre-Fabrication",
+      description: "Expertly constructing pre-fabricated structures with precision and care.",
+      icon: <Home className="h-6 w-6" />,
+      image: livingroom2,
+    },
+    {
+      title: "Landscaping",
+      description: "Transforming outdoor spaces into serene and functional environments.",
+      icon: <Mountain className="h-6 w-6" />,
+      image: livingroom3,
+    },
+    {
+      title: "Commercial Design",
+      description: "Creating efficient, functional, and visually appealing commercial spaces.",
+      icon: <Users className="h-6 w-6" />,
+      image: livingroom1,
+    },
+    {
+      title: "Residential Work",
+      description: "Designing and building beautiful, functional homes that suit your needs.",
+      icon: <Hammer className="h-6 w-6" />,
+      image: livingroom1,
+    },
+  ];
+  
 
 export default function ServicesList() {
   return (
