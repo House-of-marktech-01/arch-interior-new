@@ -1,11 +1,6 @@
-import { useState, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // For navigation arrows
 import profile from "/assets/images/livingroom2.png";
 
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false); // To control animations
-
   const testimonials = [
     {
       name: "Maria Velaskes",
@@ -44,80 +39,33 @@ const Testimonials = () => {
     },
   ];
 
-  const totalTestimonials = testimonials.length;
-
-  const goToNext = () => {
-    // setIsAnimating(true); // Start animation
-    setCurrentIndex((prevIndex) => (prevIndex + 2) % totalTestimonials);
-  };
-
-  const goToPrevious = () => {
-    // setIsAnimating(true); // Start animation
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0
-        ? totalTestimonials - 2
-        : (prevIndex - 2 + totalTestimonials) % totalTestimonials
-    );
-  };
-
-  // Get two testimonials at a time
-  const displayedTestimonials = testimonials.slice(
-    currentIndex,
-    currentIndex + 2
-  );
-
-  // Use useEffect to reset the animation state after a short delay
-  useEffect(() => {
-    const timer = setTimeout(() => setIsAnimating(false), 300); // Match duration with CSS transition
-    return () => clearTimeout(timer);
-  }, [currentIndex]);
-
   return (
-    <div className=" py-12 h-[60vh]">
-      <h2 className="text-4xl font-bold text-center mb-8">Testimonials</h2>
-      <div className="relative flex justify-center items-center">
-        {/* Left Arrow */}
-        <button
-          onClick={goToPrevious}
-          className="absolute left-0 p-3 bg-gray-300 rounded-full hover:bg-gray-400 transition duration-300 ease-in-out z-10"
-        >
-          <FaArrowLeft className="text-2xl" />
-        </button>
-
-        {/* Testimonials */}
-        <div
-          className={`flex space-x-6 w-full justify-center transition-transform duration-300 px-20 ${
-            isAnimating ? "opacity-0" : "opacity-100"
-          }`}
-        >
-          {displayedTestimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/2"
-            >
-              <div className="flex items-center space-x-4 mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-24 h-24 rounded-full"
-                />
-                <div>
-                  <h3 className="text-xl py-4 ">{testimonial.title}</h3>
-                  <p className="text-gray-700">{testimonial.feedback}</p>
-                  <p className="text-sm py-4 text-gray-500">{testimonial.name}</p>
-                </div>
+    <div className="py-12 h-auto bg-gradient-to-r from-blue-50 via-gray-100 to-blue-50">
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+        Testimonials
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 px-8">
+        {testimonials.slice(0, 4).map((testimonial, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-lg rounded-lg p-6 w-full transform transition duration-500 hover:shadow-2xl hover:-translate-y-2"
+          >
+            <div className="flex items-center space-x-4 mb-6">
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="w-24 h-24 rounded-full shadow-md"
+              />
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {testimonial.title}
+                </h3>
+                <p className="text-gray-600">{testimonial.feedback}</p>
+                <p className="text-sm text-gray-500 mt-4">{testimonial.name}</p>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Right Arrow */}
-        <button
-          onClick={goToNext}
-          className="absolute right-0 p-3 bg-gray-300 rounded-full hover:bg-gray-400 transition duration-300 ease-in-out z-10"
-        >
-          <FaArrowRight className="text-2xl" />
-        </button>
+          </div>
+        ))}
       </div>
     </div>
   );
