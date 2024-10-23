@@ -12,7 +12,7 @@ export default function Contact() {
     <div className="max-w-6xl mx-auto p-6 ">
       <h1 className="text-5xl  mb-8 font-cormorant">Get in touch</h1>
       <div className="flex flex-col md:flex-row gap-8">
-        <div className="md:w-1/3 bg-[#f4f0ec] p-8 rounded-3xl flex flex-col justify-evenly space-y-6 md:space-y-0">
+        <div className="md:w-1/3 bg-secondaryBlack p-8 rounded-3xl flex flex-col justify-evenly space-y-6 md:space-y-0">
           {/* <div className="space-y-4"> */}
           <div className="flex items-center space-x-3">
             <Mail className="text-primaryRed" />
@@ -57,7 +57,7 @@ export default function Contact() {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border bg-primaryBlack border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -72,7 +72,7 @@ export default function Contact() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border bg-primaryBlack border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Contact() {
                   id="subject"
                   name="subject"
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border bg-primaryBlack border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -103,7 +103,7 @@ export default function Contact() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border bg-primaryBlack border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function Contact() {
                 name="message"
                 rows={6}
                 required
-                className="w-full px-3 py-2 border border-b-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border bg-primaryBlack border-b-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Hello, I am interested in.."
               ></textarea>
             </div>
