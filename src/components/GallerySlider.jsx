@@ -102,7 +102,7 @@ const GallerySlider = () => {
   return (
     <div className="w-full h-full  flex flex-col justify-between">
       {/* Heading */}
-      <h1 className="text-center text-6xl my-16 text-gray-900 font-cormorant ">
+      <h1 className="text-center text-6xl my-16  font-cormorant ">
         Explore Real Spaces We've Transformed
       </h1>
 

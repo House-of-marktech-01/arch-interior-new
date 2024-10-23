@@ -40,15 +40,15 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="py-12 h-auto bg-gradient-to-r from-blue-50 via-gray-100 to-blue-50">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+    <div className="py-12 h-auto ">
+      <h2 className="text-4xl font-bold text-center mb-12 font-cormorant">
         Testimonials
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 px-8">
         {testimonials.slice(0, 4).map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-lg p-6 w-full transform transition duration-500 hover:shadow-2xl hover:-translate-y-2"
+            className="bg-secondaryBlack shadow-lg rounded-lg p-6 w-full transform transition duration-500 hover:shadow-2xl hover:-translate-y-2"
           >
             <div className="flex items-center space-x-4 mb-6">
               <img
@@ -57,7 +57,7 @@ const Testimonials = () => {
                 className="w-24 h-24 rounded-full shadow-md"
               />
               <div>
-                <h3 className="text-xl font-semibold text-gray-800">
+                <h3 className="text-3xl font-semibold font-cormorant">
                   {testimonial.title}
                 </h3>
                 <p className="text-gray-600">{testimonial.feedback}</p>

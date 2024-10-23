@@ -5,7 +5,7 @@ import logo3 from "/assets/images/nyt-logo-379x64.png";
 const FeaturedClients = () => {
   return (
     <div className="  text-center py-12  h-[50vh]">
-      <h2 className="text-3xl font-bold text-gray-800 mb-8">
+      <h2 className="text-3xl font-bold font-cormorant mb-8">
         Featured Clients
       </h2>
       <div className="flex flex-wrap justify-center items-center gap-16">
