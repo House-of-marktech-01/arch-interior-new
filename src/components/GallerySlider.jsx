@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Import arrow icons
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion"; // Import framer-motion for animations
 import galleryimage1 from "/assets/images/livingroom1.png";
 import galleryimage2 from "/assets/images/livingroom2.png";
 import galleryimage3 from "/assets/images/livingroom3.png";
@@ -63,84 +64,119 @@ const GallerySlider = () => {
     ); // Display 3 images
 
     return (
-      <div className="flex justify-center items-center h-3/4">
+      <motion.div
+        className="flex justify-center items-center h-3/4"
+        initial={{ opacity: 0 }} // Initial animation settings
+        animate={{ opacity: 1 }} // Final animation state
+        transition={{ duration: 0.5 }} // Animation duration
+      >
         {/* Left Arrow */}
-        <button
+        <motion.button
           onClick={goToPreviousImage}
-          className="absolute left-0 p-3 bg-gray-300 rounded-full hover:bg-gray-400 transition duration-300 ease-in-out z-10"
+          whileHover={{ scale: 1.1 }} // Scale animation on hover
+          whileTap={{ scale: 0.9 }} // Scale animation on tap
+          className="absolute left-0 p-3 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-300 ease-in-out z-10"
         >
           <FaArrowLeft className="text-2xl" />
-        </button>
+        </motion.button>
         {/* Gallery Images */}
-        <div className="flex justify-center space-x-4 mx-20 mb-20">
+        <div className="flex justify-center space-x-4 mx-6 sm:mx-10 lg:mx-20 mb-12 sm:mb-20">
           {displayedImages.map((image, index) => (
-            <div key={index} className="w-full relative">
-              {" "}
-              {/* Full width */}
+            <motion.div
+              key={index}
+              className="w-full relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+              initial={{ opacity: 0, scale: 0.8 }} // Initial image animation settings
+              animate={{ opacity: 1, scale: 1 }} // Final animation state
+              transition={{ duration: 0.5, delay: index * 0.2 }} // Staggered animation
+            >
               <img
                 src={image.src}
                 alt={`Gallery ${selectedGallery} ${
                   currentImageIndex + index + 1
                 }`}
-                className="rounded-lg shadow-lg w-full h-full" // Full width and auto height for proportional scaling
+                className="shadow-lg w-full h-full object-cover" // Ensure images fit correctly
               />
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Right Arrow */}
-        <button
+        <motion.button
           onClick={goToNextImage}
-          className="absolute right-0 p-3 bg-gray-300 rounded-full hover:bg-gray-400 transition duration-300 ease-in-out z-10"
+          whileHover={{ scale: 1.1 }} // Scale animation on hover
+          whileTap={{ scale: 0.9 }} // Scale animation on tap
+          className="absolute right-0 p-3 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-300 ease-in-out z-10"
         >
           <FaArrowRight className="text-2xl" />
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
     );
   };
 
   return (
-    <div className="w-full h-full  flex flex-col justify-between">
+    <div className="w-full h-full bg-black text-white flex flex-col justify-between">
       {/* Heading */}
-      <h1 className="text-center text-6xl my-16 text-gray-900 font-cormorant ">
+      <motion.h1
+        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-8 sm:my-12 lg:my-16 text-gray-100 font-cormorant"
+        initial={{ opacity: 0, y: -50 }} // Heading slide-in animation from top
+        animate={{ opacity: 1, y: 0 }} // Final state
+        transition={{ duration: 0.5 }} // Animation duration
+      >
         Explore Real Spaces We've Transformed
-      </h1>
+      </motion.h1>
 
       {/* Buttons */}
-      <div className="flex justify-center space-x-6 py-10">
-        <button
+      <motion.div
+        className="flex justify-center space-x-2 sm:space-x-4 lg:space-x-6 py-6 sm:py-8 lg:py-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.5 }} // Delayed fade-in effect for buttons
+      >
+        <motion.button
           onClick={() => handleGalleryChange("livingRoom")}
-          className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "livingRoom" ? "underline text-red-500" : ""
+          className={`px-4 sm:px-6 text-sm sm:text-lg transition duration-300 ease-in-out ${
+            selectedGallery === "livingRoom"
+              ? "underline text-red-400"
+              : "text-gray-300 hover:text-red-400"
           }`}
+          whileHover={{ scale: 1.05 }}
         >
           LIVING ROOM
-        </button>
-        <button
+        </motion.button>
+        <motion.button
           onClick={() => handleGalleryChange("diningRoom")}
-          className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "diningRoom" ? "underline text-red-500" : ""
+          className={`px-4 sm:px-6 text-sm sm:text-lg transition duration-300 ease-in-out ${
+            selectedGallery === "diningRoom"
+              ? "underline text-red-400"
+              : "text-gray-300 hover:text-red-400"
           }`}
+          whileHover={{ scale: 1.05 }}
         >
           DINING ROOM
-        </button>
-        <button
+        </motion.button>
+        <motion.button
           onClick={() => handleGalleryChange("bedroom")}
-          className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "bedroom" ? "underline text-red-500" : ""
+          className={`px-4 sm:px-6 text-sm sm:text-lg transition duration-300 ease-in-out ${
+            selectedGallery === "bedroom"
+              ? "underline text-red-400"
+              : "text-gray-300 hover:text-red-400"
           }`}
+          whileHover={{ scale: 1.05 }}
         >
           BEDROOM
-        </button>
-        <button
+        </motion.button>
+        <motion.button
           onClick={() => handleGalleryChange("office")}
-          className={`px-6 text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "office" ? "underline text-red-500" : ""
+          className={`px-4 sm:px-6 text-sm sm:text-lg transition duration-300 ease-in-out ${
+            selectedGallery === "office"
+              ? "underline text-red-400"
+              : "text-gray-300 hover:text-red-400"
           }`}
+          whileHover={{ scale: 1.05 }}
         >
           OFFICE
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
 
       {/* Gallery */}
       {renderGallery()}
