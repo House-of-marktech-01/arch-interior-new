@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "/assets/images/RCH.png";
@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-50 transition-all font-cormorant duration-300 ${
-        isScrolled ? "bg-gray-900 shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-black shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-16">

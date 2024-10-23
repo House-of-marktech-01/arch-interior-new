@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import galleryimage1 from "/assets/images/livingroom1.png";
@@ -9,6 +9,8 @@ import galleryimage4 from "/assets/images/livingroom2.png";
 const GallerySlider = () => {
   const [selectedGallery, setSelectedGallery] = useState("livingRoom");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(false); // State to track visibility
+  const galleryRef = useRef(null); // Ref for the Gallery section
 
   const galleries = {
     livingRoom: [
@@ -67,7 +69,7 @@ const GallerySlider = () => {
       <motion.div
         className="flex justify-center items-center h-3/4"
         initial={{ opacity: 0 }} // Initial animation settings
-        animate={{ opacity: 1 }} // Final animation state
+        animate={isVisible ? { opacity: 1 } : { opacity: 0 }} // Animate based on visibility
         transition={{ duration: 0.5 }} // Animation duration
       >
         {/* Left Arrow */}
@@ -87,7 +89,11 @@ const GallerySlider = () => {
               key={index}
               className="w-32 h-48 sm:w-48 sm:h-64 md:w-64 md:h-80 lg:w-80 lg:h-96 xl:w-96 xl:h-auto relative"
               initial={{ opacity: 0, scale: 0.8 }} // Initial image animation settings
-              animate={{ opacity: 1, scale: 1 }} // Final animation state
+              animate={
+                isVisible
+                  ? { opacity: 1, scale: 1 }
+                  : { opacity: 0, scale: 0.8 }
+              } // Animate based on visibility
               transition={{ duration: 0.5, delay: index * 0.2 }} // Staggered animation
             >
               <img
@@ -114,23 +120,48 @@ const GallerySlider = () => {
     );
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true); // Set visibility to true when in view
+          observer.disconnect(); // Stop observing after it becomes visible
+        }
+      },
+      { threshold: 0.1 } // Trigger when 10% of the element is in view
+    );
+
+    if (galleryRef.current) {
+      observer.observe(galleryRef.current);
+    }
+
+    return () => {
+      if (galleryRef.current) {
+        observer.unobserve(galleryRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="w-full h-full bg-black text-white flex flex-col justify-between">
+    <div
+      className="w-full h-full bg-black text-white flex flex-col justify-between"
+      ref={galleryRef} // Attach ref here
+    >
       {/* Heading */}
       <motion.h1
         className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-8 sm:my-12 lg:my-16 text-gray-100 font-cormorant"
         initial={{ opacity: 0, y: -50 }} // Heading slide-in animation from top
-        animate={{ opacity: 1, y: 0 }} // Final state
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }} // Final state based on visibility
         transition={{ duration: 0.5 }} // Animation duration
       >
-        Explore Real Spaces We've Transformed
+        Explore Real Spaces We&apos;ve Transformed
       </motion.h1>
 
       {/* Buttons */}
       <motion.div
         className="flex justify-center space-x-2 sm:space-x-4 lg:space-x-6 py-6 sm:py-8 lg:py-10"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={isVisible ? { opacity: 1 } : { opacity: 0 }} // Animate based on visibility
         transition={{ duration: 0.6, delay: 0.5 }} // Delayed fade-in effect for buttons
       >
         <motion.button
