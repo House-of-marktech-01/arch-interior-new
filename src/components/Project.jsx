@@ -19,12 +19,25 @@ export function Project() {
   return (
     <div className="w-full ">
       {/* Header */}
-      <div className="flex h-[70vh] font-serif bg-cover mb-10 object-cover bg-no-repeat bg-[url('/assets/images/livingroom2.png')] ">
-        <h1 className="w-1/5 p-4  text-4xl rounded-t-lg mx-auto text-center text-[#292f36] self-end ">
-          Our Projects
-          {/* <p className="text-gray-500 text-sm font-sans">Home / Project</p> */}
-        </h1>
-      </div>
+      <header className="">
+        <div className="relative flex items-center justify-center h-[50vh] bg-gray-100">
+          <img
+            src="/public/assets/images/livingroom1.png" // Replace with your background image path
+            alt="Background"
+            className="absolute inset-0 w-full h-full object-cover "
+          />
+          <div className="relative z-10 flex items-center justify-center w-full h-full bg-black bg-opacity-50 rounded-lg shadow-lg">
+            <div className="text-center">
+              <h1 className="text-6xl mb-4 tracking-wide text-white leading-tight font-cormorant">
+                Our Projects
+              </h1>
+              <p className="text-xl mb-6 italic font-cormorant text-white">
+                Our Real Interior Design Makeovers
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
 
       {/* Categories */}
       <div className="flex justify-center space-x-6 py-10 ">
