@@ -79,12 +79,13 @@ const GallerySlider = () => {
         >
           <FaArrowLeft className="text-2xl" />
         </motion.button>
+
         {/* Gallery Images */}
-        <div className="flex justify-center space-x-4 mx-6 sm:mx-10 lg:mx-20 mb-12 sm:mb-20">
+        <div className="flex justify-center space-x-4 mx-4 sm:mx-6 md:mx-10 lg:mx-20 mb-10 sm:mb-16 lg:mb-20">
           {displayedImages.map((image, index) => (
             <motion.div
               key={index}
-              className="w-full relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+              className="w-32 h-48 sm:w-48 sm:h-64 md:w-64 md:h-80 lg:w-80 lg:h-96 xl:w-96 xl:h-auto relative"
               initial={{ opacity: 0, scale: 0.8 }} // Initial image animation settings
               animate={{ opacity: 1, scale: 1 }} // Final animation state
               transition={{ duration: 0.5, delay: index * 0.2 }} // Staggered animation
@@ -116,7 +117,12 @@ const GallerySlider = () => {
   return (
     <div className="w-full h-full bg-black text-white flex flex-col justify-between">
       {/* Heading */}
-      <h1 className="text-center text-6xl my-16 text-gray-900 font-cormorant ">
+      <motion.h1
+        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-8 sm:my-12 lg:my-16 text-gray-100 font-cormorant"
+        initial={{ opacity: 0, y: -50 }} // Heading slide-in animation from top
+        animate={{ opacity: 1, y: 0 }} // Final state
+        transition={{ duration: 0.5 }} // Animation duration
+      >
         Explore Real Spaces We've Transformed
       </motion.h1>
 
