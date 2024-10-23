@@ -10,7 +10,7 @@ export default function Footer() {
                     {/* Company Info */}
                     <div className="ml-0 md:ml-16 col-span-1 md:col-span-2">
                         <img src={logo} alt="" className="h-24" />
-                        <p className="text-primaryBlue text-2xl mt-3">
+                        <p className="text-primaryBlue text-3xl mt-3 font-cormorant">
                             Arch Space Interio 
                         </p>
                         <p className="text-primaryBlue mb-4">
