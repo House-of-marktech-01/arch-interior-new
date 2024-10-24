@@ -12,6 +12,7 @@ import livingroom1 from "/assets/images/livingroom1.png";
 import livingroom2 from "/assets/images/livingroom2.png";
 import livingroom3 from "/assets/images/livingroom3.png";
 import { MdKitchen } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 // Services data
 const services = [
@@ -97,6 +98,7 @@ export default function ServicesList() {
               className="grid grid-cols-1 gap-8 md:grid-cols-2"
             >
               {services.map((service, index) => (
+<Link to='/portfolio'>
                 <motion.div
                   key={service.title}
                   initial={{ opacity: 0, y: 50 }}
@@ -132,6 +134,8 @@ export default function ServicesList() {
                     </div>
                   </div>
                 </motion.div>
+</Link>
+
               ))}
             </motion.div>
           </div>
