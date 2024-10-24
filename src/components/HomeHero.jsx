@@ -43,7 +43,7 @@ const HomeHero = () => {
           </motion.p>
 
           {/* Button */}
-          <motion.button
+          {/* <motion.button
             className="bg-[#ED3237] font-mono text-white py-3 px-8 rounded-none shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 hover:opacity-90"
             initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -51,7 +51,7 @@ const HomeHero = () => {
           
           >
             START MY TRANSFORMATION
-          </motion.button>
+          </motion.button> */}
         </div>
       </motion.div>
     </div>

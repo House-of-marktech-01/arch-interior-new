@@ -87,16 +87,10 @@ export default function About() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.5 + 0.5 }}
-                className="shadow overflow-hidden h-96"
+                className="shadow-xl bg-primaryBlack overflow-hidden "
               >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-cover absolute -z-20"
-                />
-                <div className="p-6 absolute bottom-0 ">
+                
+                <div className="p-6 bottom-0 ">
                   <h3 className="text-4xl font-cormorant font-semibold text-white">
                     {member.name}
                   </h3>

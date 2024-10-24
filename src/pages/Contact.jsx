@@ -69,7 +69,7 @@ export default function Contact() {
 
   return (
     <div
-      className="relative flex h-screen"
+      className="relative flex h-screen overflow-hidden"
       ref={contactRef}
       style={{
         backgroundImage: "url('/assets/images/livingroom1.png')",
@@ -84,15 +84,15 @@ export default function Contact() {
         <div className="w-[50vw]"></div>
         <motion.div
           className="w-full md:w-2/3 lg:w-1/2 px-6 py-8 pt-32 bg-black h-full bg-opacity-80"
-          initial={{ opacity: 0, y: 50 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+          transition={{ duration: 1 }}
         >
           <motion.h1
-            className="text-4xl lg:text-5xl mb-8 font-cormorant text-white text-center"
-            initial={{ opacity: 0, y: -20 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
+            className="text-4xl lg:text-7xl mb-8 font-cormorant text-white text-center"
+            initial={{ opacity: 0, x: 20 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+            transition={{ duration: 1 }}
           >
             Get in touch
           </motion.h1>

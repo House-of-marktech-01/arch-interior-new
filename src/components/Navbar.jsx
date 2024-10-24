@@ -56,12 +56,7 @@ export default function Navbar() {
               >
                 Blog
               </Link>
-              <Link
-                to="/industrial-prefab"
-                className="text-gray-200 hover:text-primaryRed px-3 py-2 rounded-md text-xl font-medium transition duration-300"
-              >
-                Pre-fab
-              </Link>
+              
             </div>
             <Link
               to="/contact"
@@ -124,12 +119,7 @@ export default function Navbar() {
             >
               Blog
             </Link>
-            <Link
-              to="/industrial-prefab"
-              className="text-gray-200 hover:text-primaryRed block px-3 py-2 rounded-md text-base font-medium transition duration-300"
-            >
-              Industrial Pre-fab Work
-            </Link>
+            
           </div>
         </div>
       )}
