@@ -11,26 +11,11 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all font-cormorant duration-300 ${
-        isScrolled ? "bg-black shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed w-full z-50 transition-all font-cormorant duration-300 bg-transparent `}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex items-center justify-between h-16">

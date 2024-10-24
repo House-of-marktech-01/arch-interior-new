@@ -1,3 +1,4 @@
+import AboutSection from "../components/AboutSection";
 import FeaturedClients from "../components/FeaturedClients";
 import GallerySlider from "../components/GallerySlider";
 import HomeHero from "../components/HomeHero";
@@ -9,6 +10,7 @@ const Home = () => {
   return (
     <div>
       <HomeHero />
+      <AboutSection/>
       <GallerySlider/>
       <Schedule/>
       <Testimonials/>
