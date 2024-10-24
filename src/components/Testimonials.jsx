@@ -67,7 +67,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="py-12 h-auto bg-black" ref={testimonialsRef}>
+    <div className="py-12 h-auto " ref={testimonialsRef}>
       <h2 className="text-4xl font-bold text-center mb-12 text-white font-cormorant">
         Testimonials
       </h2>
@@ -75,10 +75,10 @@ const Testimonials = () => {
         {testimonials.slice(0, 4).map((testimonial, index) => (
           <motion.div
             key={index}
-            className="bg-gray-800 shadow-lg rounded-lg p-6 w-full transform transition duration-500 hover:shadow-2xl hover:-translate-y-2"
+            className="bg-primaryBlack shadow-lg rounded-lg p-6 w-full transform transition duration-500 hover:shadow-2xl hover:-translate-y-2"
             initial={{ opacity: 0, scale: 0.95 }} // Initial state
             animate={isVisible ? { opacity: 1, scale: 1 } : {}} // Animate only when visible
-            transition={{ duration: 0.5, delay: index * 0.1 }} // Delay for staggered effect
+            transition={{ duration: 0.5, delay: index * 0.2 }} // Delay for staggered effect
           >
             <div className="flex items-center space-x-4 mb-6">
               <img

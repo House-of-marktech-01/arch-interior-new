@@ -94,7 +94,7 @@ const GallerySlider = () => {
                   ? { opacity: 1, scale: 1 }
                   : { opacity: 0, scale: 0.8 }
               } // Animate based on visibility
-              transition={{ duration: 0.5, delay: index * 0.2 }} // Staggered animation
+              transition={{ duration: 0.8, delay: index * 0.5 }} // Staggered animation
             >
               <img
                 src={image.src}
@@ -128,7 +128,7 @@ const GallerySlider = () => {
           observer.disconnect(); // Stop observing after it becomes visible
         }
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is in view
+      { threshold: 0.3 } // Trigger when 10% of the element is in view
     );
 
     if (galleryRef.current) {
@@ -144,7 +144,7 @@ const GallerySlider = () => {
 
   return (
     <div
-      className="w-full h-full bg-black text-white flex flex-col justify-between"
+      className="w-full h-full  text-white flex flex-col justify-between"
       ref={galleryRef} // Attach ref here
     >
       {/* Heading */}

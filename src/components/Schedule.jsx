@@ -30,7 +30,7 @@ const Schedule = () => {
 
   return (
     <div
-      className="flex flex-col md:flex-row justify-between items-center p-8 rounded-none h-[100vh] bg-black text-white"
+      className="flex flex-col md:flex-row justify-between items-center p-8 rounded-none h-[100vh]  text-white"
       ref={scheduleRef} // Attach ref here
     >
       {/* Image Section */}
@@ -40,7 +40,7 @@ const Schedule = () => {
         animate={
           isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
         } // Animate based on visibility
-        transition={{ duration: 0.5 }} // Animation duration
+        transition={{ duration: 0.8 }} // Animation duration
       >
         <motion.img
           src={homehero}
