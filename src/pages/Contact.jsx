@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import {
-  ArrowRight,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
@@ -74,7 +72,7 @@ export default function Contact() {
       className="relative flex h-screen"
       ref={contactRef}
       style={{
-        backgroundImage: "url('/public/assets/images/livingroom1.png')",
+        backgroundImage: "url('/assets/images/livingroom1.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -98,7 +96,6 @@ export default function Contact() {
           >
             Get in touch
           </motion.h1>
-        
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
