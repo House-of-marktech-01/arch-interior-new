@@ -5,12 +5,14 @@ import galleryimage1 from "/assets/images/livingroom1.png";
 import galleryimage2 from "/assets/images/livingroom2.png";
 import galleryimage3 from "/assets/images/livingroom3.png";
 import galleryimage4 from "/assets/images/livingroom2.png";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const GallerySlider = () => {
   const [selectedGallery, setSelectedGallery] = useState("livingRoom");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false); // State to track visibility
   const galleryRef = useRef(null); // Ref for the Gallery section
+  const [isSmallScreen, setIsSmallScreen] = useState(false); // State for screen size
 
   const galleries = {
     livingRoom: [
@@ -47,14 +49,14 @@ const GallerySlider = () => {
   const goToPreviousImage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0
-        ? Math.max(galleries[selectedGallery].length - 3, 0)
+        ? Math.max(galleries[selectedGallery].length - (isSmallScreen ? 1 : 3), 0)
         : prevIndex - 1
     );
   };
 
   const goToNextImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex >= galleries[selectedGallery].length - 3 ? 0 : prevIndex + 1
+      prevIndex >= galleries[selectedGallery].length - (isSmallScreen ? 1 : 3) ? 0 : prevIndex + 1
     );
   };
 
@@ -62,8 +64,8 @@ const GallerySlider = () => {
     const images = galleries[selectedGallery];
     const displayedImages = images.slice(
       currentImageIndex,
-      currentImageIndex + 3
-    ); // Display 3 images
+      currentImageIndex + (isSmallScreen ? 1 : 3) // Display 1 image on small screens, 3 on larger screens
+    );
 
     return (
       <motion.div
@@ -77,17 +79,17 @@ const GallerySlider = () => {
           onClick={goToPreviousImage}
           whileHover={{ scale: 1.1 }} // Scale animation on hover
           whileTap={{ scale: 0.9 }} // Scale animation on tap
-          className="absolute left-0 p-3 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-300 ease-in-out z-10"
+          className="absolute left-12 p-3 bg-primaryBlack text-white rounded-full hover:bg-gray-600 transition duration-300 ease-in-out z-10"
         >
-          <FaArrowLeft className="text-2xl" />
+          <ChevronLeft className="text-2xl" />
         </motion.button>
 
         {/* Gallery Images */}
-        <div className="flex justify-center space-x-4 mx-4 sm:mx-6 md:mx-10 lg:mx-20 mb-10 sm:mb-16 lg:mb-20">
+        <div className="flex justify-center items-center space-x-4 mx-4 sm:mx-6 md:mx-10 lg:mx-20 mb-10 sm:mb-16 lg:mb-20">
           {displayedImages.map((image, index) => (
             <motion.div
               key={index}
-              className="w-32 h-48 sm:w-48 sm:h-64 md:w-64 md:h-80 lg:w-80 lg:h-96 xl:w-96 xl:h-auto relative"
+              className={`w-full ${index === 1 && !isSmallScreen ? 'h-[75vh]' : 'h-[65vh]'}`}
               initial={{ opacity: 0, scale: 0.8 }} // Initial image animation settings
               animate={
                 isVisible
@@ -112,9 +114,9 @@ const GallerySlider = () => {
           onClick={goToNextImage}
           whileHover={{ scale: 1.1 }} // Scale animation on hover
           whileTap={{ scale: 0.9 }} // Scale animation on tap
-          className="absolute right-0 p-3 bg-gray-700 text-white rounded-full hover:bg-gray-600 transition duration-300 ease-in-out z-10"
+          className="absolute right-12 p-3 bg-primaryBlack text-white rounded-full hover:bg-gray-600 transition duration-300 ease-in-out z-10"
         >
-          <FaArrowRight className="text-2xl" />
+          <ChevronRight className="text-2xl" />
         </motion.button>
       </motion.div>
     );
@@ -128,7 +130,7 @@ const GallerySlider = () => {
           observer.disconnect(); // Stop observing after it becomes visible
         }
       },
-      { threshold: 0.3 } // Trigger when 10% of the element is in view
+      { threshold: 0.3 } // Trigger when 30% of the element is in view
     );
 
     if (galleryRef.current) {
@@ -139,6 +141,19 @@ const GallerySlider = () => {
       if (galleryRef.current) {
         observer.unobserve(galleryRef.current);
       }
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // Adjust based on screen width (sm breakpoint for Tailwind)
+    };
+
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize); // Listen to resize events
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -211,7 +226,9 @@ const GallerySlider = () => {
       </motion.div>
 
       {/* Gallery */}
-      {renderGallery()}
+      <div className="relative w-full h-full flex justify-center items-center">
+        {renderGallery()}
+      </div>
     </div>
   );
 };

@@ -30,7 +30,7 @@ const Schedule = () => {
 
   return (
     <div
-      className="flex flex-col md:flex-row justify-between items-center p-8 rounded-none h-[100vh]  text-white"
+      className="flex flex-col md:flex-row justify-between items-center  sm:mx-8 am:p-8 rounded-none h-[100vh]  text-white"
       ref={scheduleRef} // Attach ref here
     >
       {/* Image Section */}
@@ -45,7 +45,7 @@ const Schedule = () => {
         <motion.img
           src={homehero}
           alt="Interior Design"
-          className="w-full h-auto rounded-none shadow-lg transform hover:scale-105 transition duration-300" // No border-radius, sharp corners
+          className="w-full h-[80vh] rounded-none shadow-lg transform hover:scale-105 transition duration-300" // No border-radius, sharp corners
           whileHover={{ scale: 1.05 }} // Slight zoom on hover
         />
       </motion.div>
@@ -57,7 +57,7 @@ const Schedule = () => {
         animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }} // Animate based on visibility
         transition={{ duration: 0.7 }} // Adjusted duration for a smoother effect
       >
-        <h2 className="text-3xl md:text-5xl font-cormorant font-bold mb-6">
+        <h2 className="text-3xl md:text-5xl font-cormorant mb-6">
           Think you can&apos;t afford beautiful interior design? Think again.
         </h2>
 
