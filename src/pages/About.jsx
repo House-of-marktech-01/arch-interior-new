@@ -5,18 +5,23 @@ import { Users, Target, Award } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Jane Doe",
-    role: "Principal Designer",
+    name: "Himanshu Dhiman",
+    role: "Senior Designer",
     image: profile,
   },
   {
-    name: "John Smith",
-    role: "Senior Architect",
+    name: "Nikita Singh",
+    role: "3d Visualiser",
     image: profile,
   },
   {
-    name: "Emily Brown",
-    role: "Project Manager",
+    name: "Nitika Sachdeva",
+    role: "3d Visualiser",
+    image: profile,
+  },
+  {
+    name: "Poonam Sharma",
+    role: "Juniour Designerr",
     image: profile,
   },
 ];
@@ -67,7 +72,7 @@ export default function About() {
             experience and a keen eye for detail to every project. From
             residential interiors to commercial spaces, we approach each design
             challenge with creativity, innovation, and a deep understanding of
-            our clients' needs.
+            our clients needs.
           </p>
         </motion.section>
 
@@ -117,7 +122,7 @@ export default function About() {
                 Client-Centric Approach
               </h3>
               <p className="text-white">
-                We put our clients' needs and vision at the heart of every
+                We put our clients needs and vision at the heart of every
                 project.
               </p>
             </div>
