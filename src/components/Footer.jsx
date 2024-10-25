@@ -57,14 +57,7 @@ export default function Footer() {
                     Blog
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/industrial-prefab"
-                    className="hover:text-primaryRed"
-                  >
-                    Industrial Pre-fab Work
-                  </Link>
-                </li>
+                
               </ul>
             </div>
 
