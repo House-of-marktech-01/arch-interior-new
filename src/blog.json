@@ -1,0 +1,27 @@
+
+ [
+        {
+            "title": "Blog titile ",
+            "description": "Blog 1 description",
+            "date": "24 October 2024",
+            "author": "author 1",
+            "cover_image": "/assets/images/livingroom1.png",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur debitis expedita qui dignissimos, libero ipsam consequatur vero voluptatem aliquam necessitatibus hic, aut rem tenetur eligendi quia dolore ipsum nulla. Deserunt incidunt officiis nesciunt delectus."
+        },
+        {
+            "title": "Blog titile ",
+            "description": "Blog 1 description",
+            "date": "24 October 2024",
+            "author": "author 1",
+            "cover_image": "/assets/images/livingroom3.png",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur debitis expedita qui dignissimos, libero ipsam consequatur vero voluptatem aliquam necessitatibus hic, aut rem tenetur eligendi quia dolore ipsum nulla. Deserunt incidunt officiis nesciunt delectus."
+        },
+        {
+            "title": "Blog titile ",
+            "description": "Blog 1 description",
+            "date": "24 October 2024",
+            "author": "author 1",
+            "cover_image": "/assets/images/livingroom2.png",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur debitis expedita qui dignissimos, libero ipsam consequatur vero voluptatem aliquam necessitatibus hic, aut rem tenetur eligendi quia dolore ipsum nulla. Deserunt incidunt officiis nesciunt delectus."
+        }
+    ]
