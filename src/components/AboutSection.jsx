@@ -28,29 +28,42 @@ export default function AboutSection() {
     };
   }, []);
   return (
-    <section className="flex flex-col md:flex-row h-screen"
-    ref={sectionRef}>
+    <section className="flex flex-col md:flex-row h-screen" ref={sectionRef}>
       {/* Left side with text */}
       <div className=" text-white p-8 md:w-1/2 flex flex-col">
         <motion.h2
-        initial={{ opacity: 0, x: -50 }}
-        animate={isVisible ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 1, delay: 0.3 }}
-         className="text-5xl md:text-7xl lg:text-9xl font-cormorant mb-4">
-          Arch Space Studio
-        </motion.h2>
-        <motion.p 
-        className="text-gray-300 mb-6 max-w-lg text-sm md:text-xl"
-        initial={{ opacity: 0, x: -50 }}
-        animate={isVisible ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        Arch Space Interio is a leading Firm in Architectural Industry in Customisation & Luxury estates design with Skills. We work PAN India.
-        </motion.p>
-        <motion.button className="self-start border-2 border-primaryRed px-6 py-3 hover:bg-primaryRed"
           initial={{ opacity: 0, x: -50 }}
           animate={isVisible ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 0.8 }}>ABOUT US</motion.button>
+          transition={{ duration: 1, delay: 0.3 }}
+          className="text-5xl md:text-7xl lg:text-9xl font-cormorant mb-4"
+        >
+          Arch Space Studio
+        </motion.h2>
+        <motion.p
+          className="text-gray-300 mb-6 max-w-lg text-sm md:text-xl"
+          initial={{ opacity: 0, x: -50 }}
+          animate={isVisible ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <p className=" mb-4 text-blue-700">Where Dimension Take Shapes...</p>
+        </motion.p>
+        <motion.p
+          className="text-gray-300 mb-6 max-w-lg text-sm md:text-xl"
+          initial={{ opacity: 0, x: -50 }}
+          animate={isVisible ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Arch Space Interio is a leading Firm in Architectural Industry in
+          Customisation & Luxury estates design with Skills. We work PAN India.
+        </motion.p>
+        <motion.button
+          className="self-start border-2 border-primaryRed px-6 py-3 hover:bg-primaryRed"
+          initial={{ opacity: 0, x: -50 }}
+          animate={isVisible ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          ABOUT US
+        </motion.button>
       </div>
 
       {/* Right side with images */}
@@ -59,7 +72,7 @@ export default function AboutSection() {
         <motion.img
           src={bathroom}
           alt="Interior design background"
-          className='h-full w-full object-cover'
+          className="h-full w-full object-cover"
           initial={{ scale: 0.8, opacity: 0 }} // Initial scale down and fade
           animate={isVisible ? { scale: 1, opacity: 1 } : {}} // Scale up when visible
           transition={{ duration: 1.5, delay: 0.5 }}
@@ -73,11 +86,11 @@ export default function AboutSection() {
             objectFit="cover"
             className="shadow-2xl object-cover h-full"
             initial={{ scale: 0.8, opacity: 0 }} // Initial scale down and fade
-          animate={isVisible ? { scale: 1, opacity: 1 } : {}} // Scale up when visible
-          transition={{ duration: 1.5, delay: 1 }}
+            animate={isVisible ? { scale: 1, opacity: 1 } : {}} // Scale up when visible
+            transition={{ duration: 1.5, delay: 1 }}
           />
         </div>
       </div>
     </section>
-  )
+  );
 }
