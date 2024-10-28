@@ -72,7 +72,7 @@ export default function Contact() {
       className="relative flex h-screen overflow-hidden"
       ref={contactRef}
       style={{
-        backgroundImage: "url('/assets/images/livingroom1.png')",
+        backgroundImage: "url('/assets/images/Residential Views/1651123338329_F2.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

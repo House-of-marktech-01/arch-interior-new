@@ -1,10 +1,27 @@
 import { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import framer-motion for animations
-import galleryimage1 from "/assets/images/livingroom1.png";
-import galleryimage2 from "/assets/images/livingroom2.png";
-import galleryimage3 from "/assets/images/livingroom3.png";
-import galleryimage4 from "/assets/images/livingroom2.png";
+import Rimage1 from "/assets/images/Residential Views/03.jpg";
+import Rimage2 from "/assets/images/Residential Views/04.jpg";
+import Rimage3 from "/assets/images/Residential Views/Cam-1.jpg";
+import Rimage4 from "/assets/images/Residential Views/WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"
+
+import Kimage1 from "/assets/images/Moduler Kitchen/KITCHEN 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\KITCHEN 1.jpg"
+import Kimage2 from "/assets/images/Moduler Kitchen/WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg"
+import Kimage3 from "/assets/images/Moduler Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg"
+import Kimage4 from "/assets/images/Moduler Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg"
+
+import Bimage1 from "/assets/images/Residential Views/8.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\8.jpg"
+import Bimage2 from "/assets/images/Residential Views/1651123338329_F2.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\1651123338329_F2.jpg"
+import Bimage3 from "/assets/images/Residential Views/bed side view.png";
+import Bimage4 from "/assets/images/Residential Views/IMG-20220622-WA0008.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\IMG-20220622-WA0008.jpg"
+
+import Oimage1 from "/assets/images/Corporate Work/cam 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Corporate Work\cam 1.jpg"
+import Oimage2 from "/assets/images/Corporate Work/cam 2.jpg";
+import Oimage3 from "/assets/images/Corporate Work/cam 4.jpg";
+import Oimage4 from "/assets/images/Corporate Work/R1-1-0.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"
+
+
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const GallerySlider = () => {
@@ -16,28 +33,28 @@ const GallerySlider = () => {
 
   const galleries = {
     livingRoom: [
-      { src: galleryimage1 },
-      { src: galleryimage2 },
-      { src: galleryimage3 },
-      { src: galleryimage4 },
+      { src: Rimage1 },
+      { src: Rimage2 },
+      { src: Rimage3 },
+      { src: Rimage4 },
     ],
-    diningRoom: [
-      { src: galleryimage1 },
-      { src: galleryimage2 },
-      { src: galleryimage3 },
-      { src: galleryimage4 },
+    kitchen: [
+      { src: Kimage1 },
+      { src: Kimage2 },
+      { src: Kimage3 },
+      { src: Kimage4 },
     ],
     bedroom: [
-      { src: galleryimage1 },
-      { src: galleryimage2 },
-      { src: galleryimage3 },
-      { src: galleryimage4 },
+      { src: Bimage1 },
+      { src: Bimage2 },
+      { src: Bimage3 },
+      { src: Bimage4 },
     ],
     office: [
-      { src: galleryimage1 },
-      { src: galleryimage2 },
-      { src: galleryimage3 },
-      { src: galleryimage4 },
+      { src: Oimage1 },
+      { src: Oimage2 },
+      { src: Oimage3 },
+      { src: Oimage4 },
     ],
   };
 
@@ -191,15 +208,15 @@ const GallerySlider = () => {
           LIVING ROOM
         </motion.button>
         <motion.button
-          onClick={() => handleGalleryChange("diningRoom")}
+          onClick={() => handleGalleryChange("kitchen")}
           className={`px-4 sm:px-6 text-sm sm:text-lg transition duration-300 ease-in-out ${
-            selectedGallery === "diningRoom"
+            selectedGallery === "kitchen"
               ? "underline text-red-400"
               : "text-gray-300 hover:text-red-400"
           }`}
           whileHover={{ scale: 1.05 }}
         >
-          DINING ROOM
+          KITCHEN
         </motion.button>
         <motion.button
           onClick={() => handleGalleryChange("bedroom")}

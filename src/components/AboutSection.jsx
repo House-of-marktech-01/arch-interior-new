@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import bathroom from '/assets/images/bathroom.jpg'
-import livingroom from '/assets/images/homehero.png'
+import livingroom from '/assets/images/Residential Views/10.jpg' 
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
