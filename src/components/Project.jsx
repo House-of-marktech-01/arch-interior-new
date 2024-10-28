@@ -4,7 +4,7 @@ import projects from "../projects.json";
 
 export function Project() {
   const [selectedGallery, setSelectedGallery] = useState(
-    "architecturalService"
+    "allArchitecturalService"
   );
 
   const handleGalleryChange = (category) => {
@@ -42,14 +42,14 @@ export function Project() {
       {/* Categories */}
       <div className="flex flex-wrap justify-center gap-4 py-8 px-4  rounded-lg ">
         {[
-          { label: "Interior Design✅", category: "interiorDesign" },
+          { label: "All Architectural Service", category: "allArchitecturalService" },
+          { label: "WC Design✅", category: "wcDesign" },
           { label: "Modular Kitchen✅", category: "modularKitchen" },
           { label: "Commercial Design✅", category: "commercialDesign" },
           { label: "Residential Work✅", category: "residentialWork" },
           { label: "Mandir✅", category: "mandir" },
-          { label: "Land Scaping", category: "landScaping" },
+          { label: "Corporate Work", category: "corporateWork" },
           { label: "Pre-Fabrication", category: "preFabrication" },
-          { label: "Architectural Service", category: "architecturalService" },
         ].map((item) => (
           <button
             key={item.category}

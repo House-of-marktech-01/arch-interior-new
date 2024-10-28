@@ -1,73 +1,383 @@
 {
   "projects": [
     {
-      "category": "architecturalService",
+      "category": "allArchitecturalService",
+
       "items": [
+        { "image": "/assets/images/WC Design/04.jpg", "tag": "WC Design" },
+        { "image": "/assets/images/WC Design/05.jpg", "tag": "WC Design" },
+        { "image": "/assets/images/WC Design/07.jpg", "tag": "WC Design" },
+        { "image": "/assets/images/WC Design/1.jpg", "tag": "WC Design" },
+        { "image": "/assets/images/WC Design/2.jpg", "tag": "WC Design" },
+        { "image": "/assets/images/WC Design/F.jpg", "tag": "WC Design" },
         {
-          "project_name": "Architectural Service 1",
-          "image": "/assets/images/livingroom1.png",
-          "tag": "architecturalService"
+          "image": "/assets/images/WC Design/WhatsApp Image 2022-02-01 at 22.37.56.jpeg",
+          "tag": "WC Design"
         },
         {
-          "project_name": "Architectural Service 2",
-          "image": "/assets/images/livingroom1.png",
-          "tag": "architecturalService"
+          "image": "/assets/images/WC Design/karitk washroom.jpg",
+          "tag": "WC Design"
+        },
+        {
+          "image": "/assets/images/WC Design/karitk-washroom.jpg",
+          "tag": "WC Design"
+        },
+        {
+          "image": "/assets/images/WC Design/washroom1.jpg",
+          "tag": "WC Design"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/KITCHEN 1.jpg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/KITCHEN 2.jpg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM (2).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-31 at 12.05.33 (1).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-31 at 12.05.33.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM (1).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM (2).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM (3).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        { "image": "/assets/images/preFab.jpg", "tag": "Pre-Fabrication" },
+        {
+          "image": "/assets/images/Corporate Work/11.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/CAM 9.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/R1-1-0.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/cam 1.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/cam 2.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/cam 3.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/cam 4.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/cam 5.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/office 2.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Corporate Work/office1.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/1_Exterior - Sunset.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/1.1.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/2.2.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/2.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/03 (1).jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/3.3.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/3.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/03.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/04 (1).jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/04.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/05 (1).jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/005.1.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/006.1.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/007.1.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/07.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/08.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/09.1.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/10 (1).jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/12.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/A2_f-2.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/A3_f-3.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/G-1_F-1.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/Resort_R-1.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/Resorts_R-2.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/assets/images/Commercial Work/Resorts-3.jpg",
+          "tag": "Commercial Work"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/03.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/04.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/10 (1).jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/10.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/11.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/14.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/15.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/1651123338329_F2.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/1651123338401_F1.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/1680675213175.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/1680675213240.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/bed front.png",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/bed side view.png",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/Cam-1.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/Cam-2.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/CAM-3.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/CORRIDOR 1.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/daadi room 2.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/daadi room.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/DRAWING ROOM.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/enterance foyer 2.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/public/assets/images//Residential Views/enterance foyer.jpg",
+          "tag": "Residential Views"
+        },
+        {
+          "image": "/assets/images/Temple Design/final view 1.jpg",
+          "tag": "Temple Design"
+        },
+        {
+          "image": "/assets/images/Temple Design/final view 2.jpg",
+          "tag": "Temple Design"
+        },
+        {
+          "image": "/assets/images/Temple Design/final view 4.jpg",
+          "tag": "Temple Design"
+        },
+        {
+          "image": "/assets/images/Temple Design/final view mandir.jpg",
+          "tag": "Temple Design"
         }
       ]
     },
 
     {
-      "category": "interiorDesign",
+      "category": "wcDesign",
       "items": [
         {
-          "project_name": "Interior Design 1",
+          "project_name": "WC Design 1",
           "image": "/assets/images/WC Design/04.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 2",
+          "project_name": "WC Design 2",
           "image": "/assets/images/WC Design/05.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 1",
+          "project_name": "WC Design 1",
           "image": "/assets/images/WC Design/07.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 2",
+          "project_name": "WC Design 2",
           "image": "/assets/images/WC Design/1.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 1",
+          "project_name": "WC Design 1",
           "image": "/assets/images/WC Design/2.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 2",
+          "project_name": "WC Design 2",
           "image": "/assets/images/WC Design/F.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 1",
+          "project_name": "WC Design 1",
           "image": "/assets/images/WC Design/WhatsApp Image 2022-02-01 at 22.37.56.jpeg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 2",
+          "project_name": "WC Design 2",
           "image": "/assets/images/WC Design/karitk washroom.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 1",
+          "project_name": "WC Design 1",
           "image": "/assets/images/WC Design/karitk-washroom.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         },
         {
-          "project_name": "Interior Design 2",
+          "project_name": "WC Design 2",
           "image": "/assets/images/WC Design/washroom1.jpg",
-          "tag": "Interior Design "
+          "tag": "WC Design "
         }
       ]
     },
@@ -148,25 +458,64 @@
       "items": [
         {
           "project_name": "Pre-Fabrication 1",
-          "image": "/assets/images/prefabrication1.png"
-        },
-        {
-          "project_name": "Pre-Fabrication 2",
-          "image": "/assets/images/prefabrication2.png"
+          "image": "/assets/images/preFab.jpg",
+          "tag": "Pre-Fabrication"
         }
       ]
     },
 
     {
-      "category": "landScaping",
+      "category": "corporateWork",
       "items": [
         {
-          "project_name": "Land Scaping 1",
-          "image": "/assets/images/landscaping1.png"
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/11.jpg",
+          "tag": "Corporate Work"
         },
         {
-          "project_name": "Land Scaping 2",
-          "image": "/assets/images/landscaping2.png"
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/CAM 9.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/R1-1-0.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/cam 1.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/cam 2.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/cam 3.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/cam 4.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/cam 5.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/office 2.jpg",
+          "tag": "Corporate Work"
+        },
+        {
+          "project_name": "Corporate Work 1",
+          "image": "/assets/images/Corporate Work/office1.jpg",
+          "tag": "Corporate Work"
         }
       ]
     },
