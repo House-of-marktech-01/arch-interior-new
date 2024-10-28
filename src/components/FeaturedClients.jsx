@@ -63,14 +63,16 @@ const FeaturedClients = () => {
           {clientNames.map((name, index) => (
             <motion.div
               key={index}
-              className="w-24 sm:w-32 md:w-48 h-auto p-4 rounded-lg text-white font-semibold text-center font-cormorant text-lg"
+              className="w-48 sm:w-48 md:w-48 h-32 p-4 bg-black text-white rounded-lg text-left font-cormorant  text-lg shadow-lg"
               initial={{ opacity: 0, scale: 0.8 }} // Initial animation settings
               animate={
-                isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+                isVisible
+                  ? { opacity: 1, scale: 1 }
+                  : { opacity: 0, scale: 0.8 }
               }
               transition={{ duration: 0.5, delay: index * 0.1 }} // Animation duration with delay for staggered effect
             >
-              {name}
+              <span className="font-bold text-lg">{name}</span>
             </motion.div>
           ))}
         </motion.div>
