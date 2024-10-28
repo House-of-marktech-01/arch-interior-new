@@ -1,7 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import logo1 from "/assets/images/hgtv-logo.png";
-import logo2 from "/assets/images/the-wall-street-journal-logo.png";
-import logo3 from "/assets/images/nyt-logo-379x64.png";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 
 const FeaturedClients = () => {
@@ -30,20 +27,30 @@ const FeaturedClients = () => {
     };
   }, []);
 
+  const clientNames = [
+    "MLS Group & Associates",
+    "Konnect Tech Solutions Enterprises",
+    "The Dwars - Metal Craft",
+    "Gauri Sahai Amar Nath Bindles",
+    "Urban Atelier",
+    "Hardware World",
+    "Shri Narsingh Mandir Trust",
+  ];
+
   return (
     <div
-      className="relative text-center h-screen md:h-[60vh] lg:h-[50vh]"
+      className="relative text-center h-screen md:h-[70vh]"
       ref={clientsRef} // Attach ref here
       style={{
-        backgroundImage: "url('/assets/images/fc-bg.png')",
+        backgroundImage: "url('/assets/images/Residential Views/04.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       {/* Background pattern effect */}
       {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-10"></div> */}
-      <div className="relative w-full h-[100vh]  py-12 items-center justify-center bg-black bg-opacity-70 flex-col-reverse lg:flex-row">
-        <h2 className="relative text-3xl font-bold font-cormorant mb-8 text-white z-10">
+      <div className="relative w-full h-full py-12 flex flex-col items-center justify-center bg-black bg-opacity-70">
+        <h2 className="text-5xl font-bold font-cormorant mb-8 text-white z-10">
           Featured Clients
         </h2>
 
@@ -53,56 +60,19 @@ const FeaturedClients = () => {
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on visibility
           transition={{ duration: 0.5 }} // Animation duration
         >
-          <motion.img
-            src={logo1}
-            alt="HGTV"
-            className="w-24 sm:w-32 md:w-40 h-auto object-contain transition-transform duration-300 hover:scale-105 border-2 bg-white p-2 rounded-lg" // Responsive sizing, added rounded corners
-            initial={{ opacity: 0, scale: 0.8 }} // Initial image animation settings
-            animate={
-              isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
-            } // Animate based on visibility
-            transition={{ duration: 0.5, delay: 0.1 }} // Animation duration with delay
-          />
-          <motion.img
-            src={logo2}
-            alt="The Wall Street Journal"
-            className="w-32 sm:w-40 md:w-48 h-auto object-contain transition-transform duration-300 hover:scale-105 border-2 bg-white p-2 rounded-lg" // Responsive sizing
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={
-              isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
-            }
-            transition={{ duration: 0.5, delay: 0.2 }}
-          />
-          <motion.img
-            src={logo3}
-            alt="The New York Times"
-            className="w-28 sm:w-36 md:w-40 h-auto object-contain transition-transform duration-300 hover:scale-105 border-2 bg-white p-2 rounded-lg" // Responsive sizing
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={
-              isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
-            }
-            transition={{ duration: 0.5, delay: 0.3 }}
-          />
-          <motion.img
-            src={logo1}
-            alt="HGTV"
-            className="w-24 sm:w-32 md:w-40 h-auto object-contain transition-transform duration-300 hover:scale-105 border-2 bg-white p-2 rounded-lg" // Responsive sizing, added rounded corners
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={
-              isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
-            }
-            transition={{ duration: 0.5, delay: 0.4 }}
-          />
-          <motion.img
-            src={logo2}
-            alt="The Wall Street Journal"
-            className="w-32 sm:w-40 md:w-48 h-auto object-contain transition-transform duration-300 hover:scale-105 border-2 bg-white p-2 rounded-lg" // Responsive sizing
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={
-              isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
-            }
-            transition={{ duration: 0.5, delay: 0.5 }}
-          />
+          {clientNames.map((name, index) => (
+            <motion.div
+              key={index}
+              className="w-24 sm:w-32 md:w-48 h-auto p-4 rounded-lg text-white font-semibold text-center font-cormorant text-lg"
+              initial={{ opacity: 0, scale: 0.8 }} // Initial animation settings
+              animate={
+                isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+              }
+              transition={{ duration: 0.5, delay: index * 0.1 }} // Animation duration with delay for staggered effect
+            >
+              {name}
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </div>

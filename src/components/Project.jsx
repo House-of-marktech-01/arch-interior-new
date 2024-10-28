@@ -22,7 +22,7 @@ export function Project() {
       <header className="relative">
         <div className="relative flex items-center justify-center h-[50vh] bg-gray-100">
           <img
-            src="/assets/images/livingroom1.png" // Replace with your background image path
+            src="/public/assets/images/WC Design/07.jpg" // Replace with your background image path
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover"
           />
