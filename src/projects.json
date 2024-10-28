@@ -21,52 +21,52 @@
       "items": [
         {
           "project_name": "Interior Design 1",
-          "image": "../public/assets/images/WC Design/04.jpg",
+          "image": "/assets/images/WC Design/04.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 2",
-          "image": "../public/assets/images/WC Design/05.jpg",
+          "image": "/assets/images/WC Design/05.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 1",
-          "image": "../public/assets/images/WC Design/07.jpg",
+          "image": "/assets/images/WC Design/07.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 2",
-          "image": "../public/assets/images/WC Design/1.jpg",
+          "image": "/assets/images/WC Design/1.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 1",
-          "image": "../public/assets/images/WC Design/2.jpg",
+          "image": "/assets/images/WC Design/2.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 2",
-          "image": "../public/assets/images/WC Design/F.jpg",
+          "image": "/assets/images/WC Design/F.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 1",
-          "image": "../public/assets/images/WC Design/WhatsApp Image 2022-02-01 at 22.37.56.jpeg",
+          "image": "/assets/images/WC Design/WhatsApp Image 2022-02-01 at 22.37.56.jpeg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 2",
-          "image": "../public/assets/images/WC Design/karitk washroom.jpg",
+          "image": "/assets/images/WC Design/karitk washroom.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 1",
-          "image": "../public/assets/images/WC Design/karitk-washroom.jpg",
+          "image": "/assets/images/WC Design/karitk-washroom.jpg",
           "tag": "Interior Design "
         },
         {
           "project_name": "Interior Design 2",
-          "image": "../public/assets/images/WC Design/washroom1.jpg",
+          "image": "/assets/images/WC Design/washroom1.jpg",
           "tag": "Interior Design "
         }
       ]
@@ -423,22 +423,22 @@
       "items": [
         {
           "project_name": "Mandir 1",
-          "image": "../public/assets/images/Temple Design/final view 1.jpg",
+          "image": "/assets/images/Temple Design/final view 1.jpg",
           "tag": "Mandir"
         },
         {
           "project_name": "Mandir 2",
-          "image": "../public/assets/images/Temple Design/final view 2.jpg",
+          "image": "/assets/images/Temple Design/final view 2.jpg",
           "tag": "Mandir"
         },
         {
           "project_name": "Mandir 1",
-          "image": "../public/assets/images/Temple Design/final view 4.jpg",
+          "image": "/assets/images/Temple Design/final view 4.jpg",
           "tag": "Mandir"
         },
         {
           "project_name": "Mandir 2",
-          "image": "../public/assets/images/Temple Design/final view mandir.jpg",
+          "image": "/assets/images/Temple Design/final view mandir.jpg",
           "tag": "Mandir"
         }
       ]
