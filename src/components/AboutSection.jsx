@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import bathroom from '/assets/images/bathroom.jpg'
 import livingroom from '/assets/images/homehero.png'
 import { motion } from 'framer-motion';
@@ -37,7 +38,7 @@ export default function AboutSection() {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-5xl md:text-7xl lg:text-9xl font-cormorant mb-4"
         >
-          Arch Space Studio
+          Arch Space Interio
         </motion.h2>
         <motion.p
           className="text-gray-300 mb-6 max-w-lg text-sm md:text-xl"
@@ -45,7 +46,7 @@ export default function AboutSection() {
           animate={isVisible ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <p className=" mb-4 text-blue-700">Where Dimension Take Shapes...</p>
+          <p className=" mb-4 ">Where Dimension Take Shapes</p>
         </motion.p>
         <motion.p
           className="text-gray-300 mb-6 max-w-lg text-sm md:text-xl"
@@ -56,14 +57,16 @@ export default function AboutSection() {
           Arch Space Interio is a leading Firm in Architectural Industry in
           Customisation & Luxury estates design with Skills. We work PAN India.
         </motion.p>
+        <Link to='/about'>
         <motion.button
           className="self-start border-2 border-primaryRed px-6 py-3 hover:bg-primaryRed"
           initial={{ opacity: 0, x: -50 }}
           animate={isVisible ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1, delay: 0.8 }}
-        >
+          >
           ABOUT US
         </motion.button>
+          </Link>
       </div>
 
       {/* Right side with images */}
