@@ -8,70 +8,79 @@ import {
   Mountain,
   Users,
 } from "lucide-react";
-import livingroom1 from "/assets/images/livingroom1.png";
-import livingroom2 from "/assets/images/livingroom2.png";
-import livingroom3 from "/assets/images/livingroom3.png";
+
+import livingroom2 from "/assets/images/Residential Views/03.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\03.jpg"
+
+
+import archi from "/assets/images/Commercial Work/10 (1).jpg";//"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Commercial Work\10 (1).jpg"
+import interior from "/assets/images/Residential Views/14.jpg";//"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\14.jpg"
+import landscape from "/assets/images/Commercial Work/1_Exterior - Sunset.jpg";//"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Commercial Work\1_Exterior - Sunset.jpg"
+import residential from "/assets/images/Residential Views/WhatsApp Image 2020-04-09 at 15.23.23.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-04-09 at 15.23.23.jpeg"
+import commercial from "/assets/images/Commercial Work/2.2.jpg" //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Commercial Work\2.2.jpg"
+import mandir from '/assets/images/Temple Design/final view 1.jpg' //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Temple Design\final view 1.jpg"
+import preFab from '/assets/images/preFab.jpg'
+import corporate from "/assets/images/Corporate Work/cam 2.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Corporate Work\cam 2.jpg"
+import kitchen from "/assets/images/Modular Kitchen/KITCHEN 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\KITCHEN 1.jpg"
+
 import { MdKitchen } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 // Services data
 const services = [
+  
   {
     title: "Interior Design",
     description:
       "Designing personalized interiors that elevate your living or working space.",
     icon: <PenTool className="h-6 w-6" />,
-    image: livingroom2,
+    image: interior,
   },
   {
     title: "Modular Kitchen",
     description:
       "Design and install modern, efficient kitchens tailored to your lifestyle.",
     icon: <MdKitchen className="h-6 w-6" />,
-    image: livingroom3,
+    image: kitchen,
   },
-
+  
   {
     title: "Commercial Design",
     description:
       "Creating efficient, functional, and visually appealing commercial spaces.",
     icon: <Users className="h-6 w-6" />,
-    image: livingroom1,
+    image: commercial,
   },
   {
     title: "Residential Work",
     description:
       "Designing and building beautiful, functional homes that suit your needs.",
     icon: <Hammer className="h-6 w-6" />,
-    image: livingroom1,
+    image: residential,
   },
   {
     title: "Mandir",
     description:
       "Designing and building beautiful, functional homes that suit your needs.",
     icon: <Hammer className="h-6 w-6" />,
-    image: livingroom1,
+    image: mandir,
   },
   {
     title: "Architectural Services",
-    description:
-      "Crafting innovative structures that prioritize both aesthetics and functionality.",
+    description: "Crafting innovative structures that prioritize both aesthetics and functionality.",
     icon: <Building2 className="h-6 w-6" />,
-    image: livingroom1,
+    image: archi,
   },
   {
     title: "Pre-Fabrication",
-    description:
-      "Expertly constructing pre-fabricated structures with precision and care.",
+    description: "Expertly constructing pre-fabricated structures with precision and care.",
     icon: <Home className="h-6 w-6" />,
-    image: livingroom2,
+    image: preFab,
   },
   {
     title: "Landscaping",
-    description:
-      "Transforming outdoor spaces into serene and functional environments.",
+    description: "Transforming outdoor spaces into serene and functional environments.",
     icon: <Mountain className="h-6 w-6" />,
-    image: livingroom3,
+    image: landscape,
   },
 ];
 

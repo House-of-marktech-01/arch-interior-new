@@ -1,7 +1,7 @@
 import React from 'react';
-import livingroom from '/assets/images/livingroom2.png';
+import livingroom from '/assets/images/Commercial Work/10 (1).jpg';
 import blogs from '../blog.json';
-
+import nothing from '/assets/images/nothing.webp'
 const Blog = () => {
   return (
     <div>
@@ -24,8 +24,13 @@ const Blog = () => {
           </div>
         </div>
       </header>
-      
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center justify-center text-center p-8 rounded-lg shadow-lg">
+  <h2 className="text-5xl font-cormorant  mb-2">No Blogs Yet</h2>
+  <p className="text-gray-500 mb-6">Stay tuned! We are working on some exciting content for you.</p>
+  <img src={nothing} alt="No Blogs Illustration" className="w-1/2 md:w-1/3 lg:w-1/4" />
+</div>
+
+      {/* <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {blogs.map((blog, index) => (
             <div key={index} className="shadow-lg h-[60vh] flex flex-col rounded-lg overflow-hidden transition-transform transform hover:scale-105 ">
@@ -45,7 +50,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -5,40 +5,34 @@ import profile from "/assets/images/livingroom2.png";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Maria Velaskes",
+      name: "MLS Group & Associates",
       feedback:
-        "This software is good – clean, easy to use and provides exceptional visual aid. I really like it!",
-      title: "Good software",
+        "Working with Arch Space Interio has been an exceptional experience. Their design solutions not only met our functional needs but also exceeded our aesthetic expectations. The team's attention to detail and commitment to delivering a seamless integration with the surrounding environment have made our project truly stand out. We look forward to collaborating on future ventures.",
+      title: "Exceptional Design and Seamless Integration",
       image: profile,
     },
     {
-      name: "Helen Steinberg",
+      name: "Konnect Tech Solutions Enterprises",
       feedback:
-        "Great app for planning everything home-related. Easy enough and gives a great idea and feel for different designs and color schemes.",
-      title: "It’s just amazing",
+        "Arch Space Interio brought a unique blend of innovation and professionalism to our project. They understood our requirements and implemented a design that is both modern and practical. Their team’s responsiveness and dedication throughout the process were invaluable in achieving our vision. We highly recommend their services for any organization seeking quality design work.",
+      title: "Innovation and Professionalism Delivered",
       image: profile,
     },
     {
-      name: "John Doe",
+      name: "Urban Atelier",
       feedback:
-        "User-friendly interface and great features. It has improved my productivity immensely!",
-      title: "Highly recommend",
+        "Arch Space Interio transformed our ideas into a captivating space that perfectly reflects our brand’s identity. Their ability to balance creativity with practicality made the entire process smooth and enjoyable. The final outcome was beyond our expectations, and their expertise is evident in every detail of the design. A fantastic team to work with!",
+      title: "Creative Vision Perfectly Executed",
       image: profile,
     },
     {
-      name: "Jane Smith",
+      name: "Shri Narsingh Mandir Trust",
       feedback:
-        "Excellent app with robust features. It’s a must-have tool for interior design enthusiasts!",
-      title: "Excellent tool",
+        "We are deeply grateful to Arch Space Interio for their exceptional work on our project. They approached our requirements with respect and sensitivity, creating a space that is both functional and harmonious. Their design beautifully enhances the spiritual atmosphere we envisioned. The Arch Space Interio team’s professionalism and understanding were truly commendable.",
+      title: "A Harmonious and Respectful Design Approach",
       image: profile,
     },
-    {
-      name: "Mark Johnson",
-      feedback:
-        "Very intuitive and well-designed. The features are excellent, and I enjoy using it daily.",
-      title: "Intuitive design",
-      image: profile,
-    },
+    
   ];
 
   const [isVisible, setIsVisible] = useState(false);
@@ -80,18 +74,18 @@ const Testimonials = () => {
             animate={isVisible ? { opacity: 1, scale: 1 } : {}} // Animate only when visible
             transition={{ duration: 0.5, delay: index * 0.2 }} // Delay for staggered effect
           >
-            <div className="flex items-center space-x-4 mb-6">
-              <img
+            <div className="space-x-4 mb-6">
+              {/* <img
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-24 h-24 rounded-full shadow-md"
-              />
+              /> */}
               <div>
-                <h3 className="text-3xl font-semibold font-cormorant text-white">
+                <h3 className="text-3xl font-semibold font-cormorant text-primaryRed mb-4">
                   {testimonial.title}
                 </h3>
-                <p className="text-gray-400">{testimonial.feedback}</p>
-                <p className="text-sm text-gray-500 mt-4">{testimonial.name}</p>
+                <p className="text-gray-400 italic">{testimonial.feedback}</p>
+                <p className="text-sm text-primaryRed mt-4">{testimonial.name}</p>
               </div>
             </div>
           </motion.div>
