@@ -43,11 +43,11 @@ export function Project() {
       <div className="flex flex-wrap justify-center gap-4 py-8 px-4  rounded-lg ">
         {[
           { label: "All Architectural Service", category: "allArchitecturalService" },
-          { label: "WC Design✅", category: "wcDesign" },
-          { label: "Modular Kitchen✅", category: "modularKitchen" },
-          { label: "Commercial Design✅", category: "commercialDesign" },
-          { label: "Residential Work✅", category: "residentialWork" },
-          { label: "Mandir✅", category: "mandir" },
+          { label: "WC Design", category: "wcDesign" },
+          { label: "Modular Kitchen", category: "modularKitchen" },
+          { label: "Commercial Design", category: "commercialDesign" },
+          { label: "Residential Work", category: "residentialWork" },
+          { label: "Mandir", category: "mandir" },
           { label: "Corporate Work", category: "corporateWork" },
           { label: "Pre-Fabrication", category: "preFabrication" },
         ].map((item) => (
