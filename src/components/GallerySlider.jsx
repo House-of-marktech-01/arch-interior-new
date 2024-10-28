@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 // import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import framer-motion for animations
-import Rimage1 from "../../public/assets/images/Residential Views/03.jpg";
+import Rimage1 from "/assets/images/Residential Views/03.jpg";
 import Rimage2 from "/assets/images/Residential Views/04.jpg";
 import Rimage3 from "/assets/images/Residential Views/Cam-1.jpg";
 import Rimage4 from "/assets/images/Residential Views/WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"

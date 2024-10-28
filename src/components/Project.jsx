@@ -4,7 +4,7 @@ import projects from "../projects.json";
 
 export function Project() {
   const [selectedGallery, setSelectedGallery] = useState(
-    "architecturalService"
+    "allArchitecturalService"
   );
 
   const handleGalleryChange = (category) => {
@@ -22,7 +22,7 @@ export function Project() {
       <header className="relative">
         <div className="relative flex items-center justify-center h-[50vh] bg-gray-100">
           <img
-            src="/public/assets/images/livingroom1.png" // Replace with your background image path
+            src="/assets/images/livingroom1.png" // Replace with your background image path
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -42,14 +42,14 @@ export function Project() {
       {/* Categories */}
       <div className="flex flex-wrap justify-center gap-4 py-8 px-4  rounded-lg ">
         {[
-          { label: "Interior Design✅", category: "interiorDesign" },
+          { label: "All Architectural Service", category: "allArchitecturalService" },
+          { label: "WC Design✅", category: "wcDesign" },
           { label: "Modular Kitchen✅", category: "modularKitchen" },
           { label: "Commercial Design✅", category: "commercialDesign" },
           { label: "Residential Work✅", category: "residentialWork" },
           { label: "Mandir✅", category: "mandir" },
-          { label: "Land Scaping", category: "landScaping" },
+          { label: "Corporate Work", category: "corporateWork" },
           { label: "Pre-Fabrication", category: "preFabrication" },
-          { label: "Architectural Service", category: "architecturalService" },
         ].map((item) => (
           <button
             key={item.category}
