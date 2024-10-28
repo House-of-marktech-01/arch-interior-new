@@ -88,10 +88,10 @@ export default function Footer() {
               </li>
               <li className=" flex items-center ">
                 <MapPin className="mr-2 text-primaryRed" />
-                Station​ Rd, Tejmandi, Alwar
+                Building No:45, Tej Mandi,
               </li>
               <li className="flex items-center ml-8">
-              Rajasthan 301001, India
+              Station Road, Alwar, Raj, 301001
               </li>
               <a className="flex items-center hover:text-primaryRed" href="https://wa.me/9999167989">
                 <Phone className="mr-2 text-primaryRed" />

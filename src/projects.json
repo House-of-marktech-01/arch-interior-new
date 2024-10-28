@@ -460,6 +460,16 @@
           "project_name": "Pre-Fabrication 1",
           "image": "/assets/images/preFab.jpg",
           "tag": "Pre-Fabrication"
+        },
+        {
+          "project_name": "Pre-Fabrication 2",
+          "image": "/assets/images/preFab2.jpg",
+          "tag": "Pre-Fabrication"
+        },
+        {
+          "project_name": "Pre-Fabrication 3",
+          "image": "/assets/images/preFab3.jpg",
+          "tag": "Pre-Fabrication"
         }
       ]
     },
