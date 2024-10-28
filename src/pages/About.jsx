@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
-import livingroom from "/assets/images/livingroom3.png";
-import profile from "/assets/images/profile.jpg";
+import livingroom from "/assets/images/Commercial Work/08.jpg";
+import profile from "/assets/images/Commercial Work/08.jpg"; 
 import { Users, Target, Award } from "lucide-react";
 
 const teamMembers = [
+  {
+    name: "Yash Gupta",
+    role: "Architect, Founder",
+    image: profile,
+  },
   {
     name: "Himanshu Dhiman",
     role: "Senior Designer",
@@ -21,7 +26,7 @@ const teamMembers = [
   },
   {
     name: "Poonam Sharma",
-    role: "Juniour Designerr",
+    role: "Junior Designer",
     image: profile,
   },
 ];
@@ -56,30 +61,36 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-16"
+          className="mb-6"
         >
           <h2 className="text-5xl font-bold text-white mb-4 font-cormorant">
-            Our Story
+            Who are we?
           </h2>
           <p className="text-lg text-white mb-6">
-            Founded in 2005, our interior design firm has been transforming
-            spaces and enriching lives for over 15 years. We believe in the
-            power of design to inspire, comfort, and elevate the human
-            experience.
+          <span className="text-primaryRed">"ARCH SPACE INTERIO"</span> – is a leading designer of a multifaceted firm that work across in architecture, interiors, furniture, lighting, product design with stabile design and landscaping & Industrial Pre Fabrication Work.
           </p>
           <p className="text-lg text-white">
-            Our team of passionate designers and architects brings a wealth of
-            experience and a keen eye for detail to every project. From
-            residential interiors to commercial spaces, we approach each design
-            challenge with creativity, innovation, and a deep understanding of
-            our clients needs.
+          Design is usually considered as USP of a project, but it does not mean creating beautiful views rather it should create a “Sense of belonging/ act as part of whole” for the user and the cityscapes.
           </p>
         </motion.section>
-
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          className="mb-16"
+        >
+          
+          <p className="text-lg text-white mb-6">
+          ASI has a creative team of Landscape Planners, Architects, Draftsman and technical staff committed to designing of urban spaces and landscape art. With the diverse disciplines in ASI, we create and design in different realms. Our well equipped studio and team of highly qualified professionals are well versed with computer aided design.
+          </p>
+          <p className="text-lg text-white">
+          Any project here is taken up with an intent to suffice the needs of client with keeping in mind the design sensibilities.
+          </p>
+        </motion.section>
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-16"
         >
           <h2 className="text-5xl font-bold text-white mb-8 font-cormorant">
@@ -109,7 +120,7 @@ export default function About() {
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
           className="mb-16"
         >
           <h2 className="text-5xl font-bold text-white mb-8 font-cormorant">
@@ -149,21 +160,7 @@ export default function About() {
           </div>
         </motion.section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-        >
-          <h2 className="text-5xl font-bold text-white mb-4 font-cormorant">
-            Our Mission
-          </h2>
-          <p className="text-lg text-white">
-            Our mission is to create inspiring, functional, and sustainable
-            spaces that enhance the quality of life for our clients. We strive
-            to blend aesthetics with practicality, tradition with innovation,
-            and form with function in every project we undertake.
-          </p>
-        </motion.section>
+        
       </main>
     </div>
   );

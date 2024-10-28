@@ -97,9 +97,9 @@ export default function Footer() {
               </li>
               <li className=" flex items-center ">
                 <MapPin className="mr-2 text-primaryRed" />
-                123 Industrial Park Rd
+                Alwar, India
               </li>
-              <li className="  ml-8">Anytown, ST 12345</li>
+              
               <li className="flex items-center ">
                 <Phone className="mr-2 text-primaryRed" />
                 +91 9999167989
