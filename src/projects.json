@@ -1,84 +1,447 @@
 {
   "projects": [
     {
-      "project_name": "Living Room 1",
-      "category": "livingRoom",
-      "image": "/assets/images/livingroom1.png"
+      "category": "architecturalService",
+      "items": [
+        {
+          "project_name": "Architectural Service 1",
+          "image": "/assets/images/livingroom1.png",
+          "tag": "architecturalService"
+        },
+        {
+          "project_name": "Architectural Service 2",
+          "image": "/assets/images/livingroom1.png",
+          "tag": "architecturalService"
+        }
+      ]
     },
+
     {
-      "project_name": "Living Room 2",
-      "category": "livingRoom",
-      "image": "/assets/images/livingroom2.png"
+      "category": "interiorDesign",
+      "items": [
+        {
+          "project_name": "Interior Design 1",
+          "image": "/assets/images/WC Design/04.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 2",
+          "image": "/assets/images/WC Design/05.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 1",
+          "image": "/assets/images/WC Design/07.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 2",
+          "image": "/assets/images/WC Design/1.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 1",
+          "image": "/assets/images/WC Design/2.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 2",
+          "image": "/assets/images/WC Design/F.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 1",
+          "image": "/assets/images/WC Design/WhatsApp Image 2022-02-01 at 22.37.56.jpeg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 2",
+          "image": "/assets/images/WC Design/karitk washroom.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 1",
+          "image": "/assets/images/WC Design/karitk-washroom.jpg",
+          "tag": "Interior Design "
+        },
+        {
+          "project_name": "Interior Design 2",
+          "image": "/assets/images/WC Design/washroom1.jpg",
+          "tag": "Interior Design "
+        }
+      ]
     },
+
     {
-      "project_name": "Living Room 3",
-      "category": "livingRoom",
-      "image": "/assets/images/livingroom3.png"
+      "category": "modularKitchen",
+      "items": [
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/KITCHEN 1.jpg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 2",
+          "image": "/assets/images/Modular Kitchen/KITCHEN 2.jpg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM (2).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 2",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-31 at 12.05.33 (1).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 2",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-31 at 12.05.33.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM (1).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM (2).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM (3).jpeg",
+          "tag": "Modular Kitchen"
+        },
+        {
+          "project_name": "Modular Kitchen 1",
+          "image": "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM.jpeg",
+          "tag": "Modular Kitchen"
+        }
+      ]
     },
+
     {
-      "project_name": "Living Room 4",
-      "category": "livingRoom",
-      "image": "/assets/images/livingroom1.png"
+      "category": "preFabrication",
+      "items": [
+        {
+          "project_name": "Pre-Fabrication 1",
+          "image": "/assets/images/prefabrication1.png"
+        },
+        {
+          "project_name": "Pre-Fabrication 2",
+          "image": "/assets/images/prefabrication2.png"
+        }
+      ]
     },
+
     {
-      "project_name": "Dining Room 1",
-      "category": "diningRoom",
-      "image": "/assets/images/livingroom1.png"
+      "category": "landScaping",
+      "items": [
+        {
+          "project_name": "Land Scaping 1",
+          "image": "/assets/images/landscaping1.png"
+        },
+        {
+          "project_name": "Land Scaping 2",
+          "image": "/assets/images/landscaping2.png"
+        }
+      ]
     },
+
     {
-      "project_name": "Dining Room 2",
-      "category": "diningRoom",
-      "image": "/assets/images/livingroom1.png"
+      "category": "commercialDesign",
+      "items": [
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/1_Exterior - Sunset.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/1.1.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/2.2.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/2.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/03 (1).jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/3.3.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/3.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/03.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/04 (1).jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/04.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/05 (1).jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/005.1.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/006.1.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/007.1.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/07.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/08.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/09.1.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/10 (1).jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/12.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/A2_f-2.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/A3_f-3.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/G-1_F-1.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/Resort_R-1.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 2",
+          "image": "/assets/images/Commercial Work/Resorts_R-2.jpg",
+          "tag": "Commercial Design"
+        },
+        {
+          "project_name": "Commercial Design 1",
+          "image": "/assets/images/Commercial Work/Resorts-3.jpg",
+          "tag": "Commercial Design"
+        }
+      ]
     },
+
     {
-      "project_name": "Dining Room 3",
-      "category": "diningRoom",
-      "image": "/assets/images/livingroom1.png"
+      "category": "residentialWork",
+      "items": [
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/03.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/04.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/10 (1).jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/10.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/11.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/14.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/15.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/1651123338329_F2.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/1651123338401_F1.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/1680675213175.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/1680675213240.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/bed front.png",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/bed side view.png",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/Cam-1.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/Cam-2.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/CAM-3.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/CORRIDOR 1.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/daadi room 2.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/daadi room.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/DRAWING ROOM.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 1",
+          "image": "/public/assets/images//Residential Views/enterance foyer 2.jpg",
+          "tag": "Residential Work"
+        },
+        {
+          "project_name": "Residential Work 2",
+          "image": "/public/assets/images//Residential Views/enterance foyer.jpg",
+          "tag": "Residential Work"
+        }
+      ]
     },
+
     {
-      "project_name": "Dining Room 4",
-      "category": "diningRoom",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Bedroom 1",
-      "category": "bedroom",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Bedroom 2",
-      "category": "bedroom",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Bedroom 3",
-      "category": "bedroom",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Bedroom 4",
-      "category": "bedroom",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Office 1",
-      "category": "office",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Office 2",
-      "category": "office",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Office 3",
-      "category": "office",
-      "image": "/assets/images/livingroom1.png"
-    },
-    {
-      "project_name": "Office 4",
-      "category": "office",
-      "image": "/assets/images/livingroom1.png"
+      "category": "mandir",
+      "items": [
+        {
+          "project_name": "Mandir 1",
+          "image": "/assets/images/Temple Design/final view 1.jpg",
+          "tag": "Mandir"
+        },
+        {
+          "project_name": "Mandir 2",
+          "image": "/assets/images/Temple Design/final view 2.jpg",
+          "tag": "Mandir"
+        },
+        {
+          "project_name": "Mandir 1",
+          "image": "/assets/images/Temple Design/final view 4.jpg",
+          "tag": "Mandir"
+        },
+        {
+          "project_name": "Mandir 2",
+          "image": "/assets/images/Temple Design/final view mandir.jpg",
+          "tag": "Mandir"
+        }
+      ]
     }
   ]
 }

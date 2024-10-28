@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+// import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import framer-motion for animations
 import Rimage1 from "/assets/images/Residential Views/03.jpg";
 import Rimage2 from "/assets/images/Residential Views/04.jpg";

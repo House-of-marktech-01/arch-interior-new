@@ -1,15 +1,6 @@
 import { Link } from "react-router-dom";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import logo from "/assets/images/RCH.png";
-import { BsBehance } from "react-icons/bs";
 import { FaBehance, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
@@ -32,18 +23,18 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
               </a>
               <a
-                href="https://www.instagram.com/archspace_interio/"
-                className="text-primaryRed hover:text-blue-600"
-              >
-                <FaInstagram size={24} />
-                <span className="sr-only">Instagram</span>
-              </a>
-              <a
                 href="https://www.linkedin.com/in/designer-yash227989/"
                 className="text-primaryRed hover:text-blue-600"
               >
                 <FaLinkedin size={24} />
                 <span className="sr-only">LinkedIn</span>
+              </a>
+              <a
+                href="https://www.instagram.com/archspace_interio/"
+                className="text-primaryRed hover:text-blue-600"
+              >
+                <FaInstagram size={24} />
+                <span className="sr-only">Instagram</span>
               </a>
               <a
                 href="https://www.behance.net/asi21"
