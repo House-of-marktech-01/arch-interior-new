@@ -80,16 +80,16 @@ export default function Contact() {
       {/* Left Side (Black Background) */}
 
       {/* Right Side (Form Section) */}
-      <div className="relative w-full flex items-center justify-center bg-black bg-opacity-50 ">
-        <div className="w-[50vw]"></div>
+      <div className="relative w-full flex items-center justify-end bg-black bg-opacity-50 ">
+        {/* <div className="w-[50vw]"></div> */}
         <motion.div
-          className="w-full md:w-2/3 lg:w-1/2 px-6 py-8 pt-32 bg-black h-full bg-opacity-80"
+          className="w-full md:w-2/3 lg:w-1/2 px-6 sm:py-8 flex flex-col justify-center bg-black h-full bg-opacity-80"
           initial={{ opacity: 0, x: 50 }}
           animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
           transition={{ duration: 1 }}
         >
           <motion.h1
-            className="text-4xl lg:text-7xl mb-8 font-cormorant text-white text-center"
+            className="text-5xl lg:text-7xl sm:mb-8 font-cormorant text-white text-center"
             initial={{ opacity: 0, x: 20 }}
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 1 }}
@@ -140,7 +140,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-4">
               <div>
                 <label
                   htmlFor="subject"
