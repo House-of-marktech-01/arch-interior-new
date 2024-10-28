@@ -6,10 +6,10 @@ import Rimage2 from "/assets/images/Residential Views/04.jpg";
 import Rimage3 from "/assets/images/Residential Views/Cam-1.jpg";
 import Rimage4 from "/assets/images/Residential Views/WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"
 
-import Kimage1 from "/assets/images/Moduler Kitchen/KITCHEN 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\KITCHEN 1.jpg"
-import Kimage2 from "/assets/images/Moduler Kitchen/WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg"
-import Kimage3 from "/assets/images/Moduler Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg"
-import Kimage4 from "/assets/images/Moduler Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg"
+import Kimage1 from "/assets/images/Modular Kitchen/KITCHEN 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\KITCHEN 1.jpg"
+import Kimage2 from "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-07-06 at 4.35.24 PM.jpeg"
+import Kimage3 from "/assets/images/Modular Kitchen/WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-08-16 at 2.24.04 PM - Copy.jpeg"
+import Kimage4 from "/assets/images/Modular Kitchen/WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\WhatsApp Image 2022-07-03 at 3.34.08 PM (1).jpeg"
 
 import Bimage1 from "/assets/images/Residential Views/8.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\8.jpg"
 import Bimage2 from "/assets/images/Residential Views/1651123338329_F2.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\1651123338329_F2.jpg"

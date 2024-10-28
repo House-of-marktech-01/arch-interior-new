@@ -20,7 +20,7 @@ import commercial from "/assets/images/Commercial Work/2.2.jpg" //"C:\Users\shru
 import mandir from '/assets/images/Temple Design/final view 1.jpg' //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Temple Design\final view 1.jpg"
 import preFab from '/assets/images/preFab.jpg'
 import corporate from "/assets/images/Corporate Work/cam 2.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Corporate Work\cam 2.jpg"
-import kitchen from "/assets/images/Moduler Kitchen/KITCHEN 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\KITCHEN 1.jpg"
+import kitchen from "/assets/images/Modular Kitchen/KITCHEN 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\KITCHEN 1.jpg"
 
 import { MdKitchen } from "react-icons/md";
 import { Link } from "react-router-dom";
