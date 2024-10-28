@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import homehero from "/assets/images/Residential Views/LIVING DINING 2.jpg";
+import { Link } from "react-router-dom";
 
 const Schedule = () => {
   const [isVisible, setIsVisible] = useState(false); // State to track visibility
@@ -49,14 +50,15 @@ const Schedule = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-cormorant mb-6">
             Think you can&apos;t afford beautiful interior design? Think again.
           </h2>
-
+<Link to='https://calendly.com/archspaceinterio21/30min'>
           <motion.button
             className="py-3 px-8 bg-[#ED3237] font-mono text-white text-lg rounded-none shadow-lg hover:bg-[#000000] transition duration-300"
             whileHover={{ scale: 1.05, backgroundColor: "#000000" }} // Hover with slight scale and color change
             whileTap={{ scale: 0.95 }} // Scale down on tap for a click effect
-          >
+            >
             SCHEDULE A CONSULTATION
           </motion.button>
+            </Link>
         </motion.div>
 
         {/* Image Section */}
