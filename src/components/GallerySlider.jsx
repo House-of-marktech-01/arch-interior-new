@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 // import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import framer-motion for animations
-import Rimage1 from "/assets/images/Residential Views/03.jpg";
+import Rimage1 from "../../public/assets/images/Residential Views/03.jpg";
 import Rimage2 from "/assets/images/Residential Views/04.jpg";
 import Rimage3 from "/assets/images/Residential Views/Cam-1.jpg";
 import Rimage4 from "/assets/images/Residential Views/WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"
@@ -20,7 +20,6 @@ import Oimage1 from "/assets/images/Corporate Work/cam 1.jpg"; //"C:\Users\shrut
 import Oimage2 from "/assets/images/Corporate Work/cam 2.jpg";
 import Oimage3 from "/assets/images/Corporate Work/cam 4.jpg";
 import Oimage4 from "/assets/images/Corporate Work/R1-1-0.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-01-11 at 15.28.48 (1).jpeg"
-
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -66,14 +65,19 @@ const GallerySlider = () => {
   const goToPreviousImage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0
-        ? Math.max(galleries[selectedGallery].length - (isSmallScreen ? 1 : 3), 0)
+        ? Math.max(
+            galleries[selectedGallery].length - (isSmallScreen ? 1 : 3),
+            0
+          )
         : prevIndex - 1
     );
   };
 
   const goToNextImage = () => {
     setCurrentImageIndex((prevIndex) =>
-      prevIndex >= galleries[selectedGallery].length - (isSmallScreen ? 1 : 3) ? 0 : prevIndex + 1
+      prevIndex >= galleries[selectedGallery].length - (isSmallScreen ? 1 : 3)
+        ? 0
+        : prevIndex + 1
     );
   };
 
@@ -106,7 +110,9 @@ const GallerySlider = () => {
           {displayedImages.map((image, index) => (
             <motion.div
               key={index}
-              className={`w-full ${index === 1 && !isSmallScreen ? 'h-[75vh]' : 'h-[65vh]'}`}
+              className={`w-full ${
+                index === 1 && !isSmallScreen ? "h-[75vh]" : "h-[65vh]"
+              }`}
               initial={{ opacity: 0, scale: 0.8 }} // Initial image animation settings
               animate={
                 isVisible
