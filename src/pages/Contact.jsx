@@ -19,13 +19,16 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://arch-interior-server.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         setFormStatus("Form submitted successfully!");
@@ -72,7 +75,8 @@ export default function Contact() {
       className="relative flex h-screen overflow-hidden"
       ref={contactRef}
       style={{
-        backgroundImage: "url('/assets/images/Residential Views/1651123338329_F2.jpg')",
+        backgroundImage:
+          "url('/assets/images/Residential Views/1651123338329_F2.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
