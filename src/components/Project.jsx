@@ -1,20 +1,30 @@
 import { ProjectCard } from "./ProjectCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import projects from "../projects.json";
 
 export function Project() {
-  const [selectedGallery, setSelectedGallery] = useState(
-    "allArchitecturalService"
-  );
+  const location = useLocation();
+  const initialCategory = location.category || "allArchitecturalService";
+  const [selectedGallery, setSelectedGallery] = useState(initialCategory);
 
   const handleGalleryChange = (category) => {
     setSelectedGallery(category);
   };
 
   // Filter projects based on the selected category
- const filteredProjects =
-   projects.projects.find((project) => project.category === selectedGallery)
-     ?.items || [];
+  const filteredProjects =
+    projects.projects.find((project) => project.category === selectedGallery)
+      ?.items || [];
+
+  useEffect(() => {
+    // Update selectedGallery when the component loads or when the state changes
+    const params = new URLSearchParams(location.search);
+    const category = params.get("category");
+    if (category) {
+      setSelectedGallery(category);
+    }
+  }, [location]);
 
   return (
     <div className="w-full">
@@ -40,7 +50,7 @@ export function Project() {
       </header>
 
       {/* Categories */}
-      <div className="flex flex-wrap justify-center gap-4 py-8 px-4  rounded-lg ">
+      <div className="flex flex-wrap justify-center gap-4 py-8 px-4 rounded-lg">
         {[
           { label: "All Architectural Service", category: "allArchitecturalService" },
           { label: "WC Design", category: "wcDesign" },

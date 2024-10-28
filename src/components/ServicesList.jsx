@@ -13,7 +13,7 @@ import livingroom2 from "/assets/images/Residential Views/03.jpg"; //"C:\Users\s
 
 
 import archi from "/assets/images/Commercial Work/10 (1).jpg";//"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Commercial Work\10 (1).jpg"
-import interior from "/assets/images/Residential Views/14.jpg";//"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\14.jpg"
+import interior from "/assets/images/WC Design/07.jpg";//"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\14.jpg"
 import landscape from "/assets/images/Commercial Work/1_Exterior - Sunset.jpg";//"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Commercial Work\1_Exterior - Sunset.jpg"
 import residential from "/assets/images/Residential Views/WhatsApp Image 2020-04-09 at 15.23.23.jpeg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\WhatsApp Image 2020-04-09 at 15.23.23.jpeg"
 import commercial from "/assets/images/Commercial Work/2.2.jpg" //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Commercial Work\2.2.jpg"
@@ -27,13 +27,21 @@ import { Link } from "react-router-dom";
 
 // Services data
 const services = [
-  
   {
-    title: "Interior Design",
+    title: "Residential Work",
+    description:
+      "Designing and building beautiful, functional homes that suit your needs.",
+    icon: <Hammer className="h-6 w-6" />,
+    image: residential,
+    category: "residentialWork"
+  },
+  {
+    title: "WC Design",
     description:
       "Designing personalized interiors that elevate your living or working space.",
     icon: <PenTool className="h-6 w-6" />,
     image: interior,
+    category: "wcDesign"
   },
   {
     title: "Modular Kitchen",
@@ -41,21 +49,22 @@ const services = [
       "Design and install modern, efficient kitchens tailored to your lifestyle.",
     icon: <MdKitchen className="h-6 w-6" />,
     image: kitchen,
+    category: "modularKitchen"
   },
-  
   {
     title: "Commercial Design",
     description:
       "Creating efficient, functional, and visually appealing commercial spaces.",
     icon: <Users className="h-6 w-6" />,
     image: commercial,
+    category: "commercialDesign"
   },
   {
-    title: "Residential Work",
-    description:
-      "Designing and building beautiful, functional homes that suit your needs.",
-    icon: <Hammer className="h-6 w-6" />,
-    image: residential,
+    title: "Corporate work",
+    description: "Transforming outdoor spaces into serene and functional environments.",
+    icon: <Mountain className="h-6 w-6" />,
+    image: corporate,
+    category: "corporateWork"
   },
   {
     title: "Mandir",
@@ -63,26 +72,24 @@ const services = [
       "Designing and building beautiful, functional homes that suit your needs.",
     icon: <Hammer className="h-6 w-6" />,
     image: mandir,
+    category: "mandir"
   },
   {
     title: "Architectural Services",
     description: "Crafting innovative structures that prioritize both aesthetics and functionality.",
     icon: <Building2 className="h-6 w-6" />,
     image: archi,
+    category: "allArchitecturalService"
   },
   {
     title: "Pre-Fabrication",
     description: "Expertly constructing pre-fabricated structures with precision and care.",
     icon: <Home className="h-6 w-6" />,
     image: preFab,
-  },
-  {
-    title: "Landscaping",
-    description: "Transforming outdoor spaces into serene and functional environments.",
-    icon: <Mountain className="h-6 w-6" />,
-    image: landscape,
+    category: "preFabrication"
   },
 ];
+
 
 export default function ServicesList() {
   return (
@@ -116,7 +123,10 @@ export default function ServicesList() {
               className="grid grid-cols-1 gap-8 md:grid-cols-2"
             >
               {services.map((service, index) => (
-                <Link to="/portfolio">
+                <Link 
+                to={`/portfolio?category=${service.category}`}
+                key={service.title}
+              >
                   <motion.div
                     key={service.title}
                     initial={{ opacity: 0, y: 50 }}
