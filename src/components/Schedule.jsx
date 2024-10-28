@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import homehero from "/assets/images/homehero.png";
+import homehero from "/assets/images/Residential Views/LIVING DINING 2.jpg";
 
 const Schedule = () => {
   const [isVisible, setIsVisible] = useState(false); // State to track visibility
@@ -33,7 +33,7 @@ const Schedule = () => {
       className="flex flex-col-reverse lg:flex-row justify-between items-center rounded-none h-[100vh] text-white"
       ref={scheduleRef} // Attach ref here
       style={{
-        backgroundImage: "url('/assets/images/livingroom1.png')",
+        backgroundImage: "url('/assets/images/Residential Views/Cam-1.jpg')", //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Residential Views\IMG-20220622-WA0008.jpg"
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
