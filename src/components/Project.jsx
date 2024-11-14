@@ -60,6 +60,10 @@ export function Project() {
           { label: "Mandir", category: "mandir" },
           { label: "Corporate Work", category: "corporateWork" },
           { label: "Pre-Fabrication", category: "preFabrication" },
+          { label: "Facade", category: "facade" },
+          { label: "Cottage Work", category: "cottageWork" },
+          { label: "Walkin Closet", category: "walkinCloset" },
+          { label: "Entrance Lobby", category: "entranceLobby" },
         ].map((item) => (
           <button
             key={item.category}

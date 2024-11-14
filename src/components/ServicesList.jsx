@@ -21,7 +21,10 @@ import mandir from '/assets/images/Temple Design/final view 1.jpg' //"C:\Users\s
 import preFab from '/assets/images/preFab.jpg'
 import corporate from "/assets/images/Corporate Work/cam 2.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Corporate Work\cam 2.jpg"
 import kitchen from "/assets/images/Modular Kitchen/KITCHEN 1.jpg"; //"C:\Users\shrut\Desktop\Working On\arch-interior\public\assets\images\Moduler Kitchen\KITCHEN 1.jpg"
-
+import entrance from "/assets/images/Entrance Lobby/15.jpg"
+import facade from "/assets/images/Facade/1 (6).jpeg"
+import closet from "/assets/images/Walking Closet/12.jpg"
+import cottage from "/assets/images/Cottage Work/16.1.jpg"
 import { MdKitchen } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -31,7 +34,7 @@ const services = [
     title: "Residential Work",
     description:
       "Designing and building beautiful, functional homes that suit your needs.",
-    icon: <Hammer className="h-6 w-6" />,
+  
     image: residential,
     category: "residentialWork"
   },
@@ -39,7 +42,7 @@ const services = [
     title: "WC Design",
     description:
       "Designing personalized interiors that elevate your living or working space.",
-    icon: <PenTool className="h-6 w-6" />,
+
     image: interior,
     category: "wcDesign"
   },
@@ -47,7 +50,7 @@ const services = [
     title: "Modular Kitchen",
     description:
       "Design and install modern, efficient kitchens tailored to your lifestyle.",
-    icon: <MdKitchen className="h-6 w-6" />,
+
     image: kitchen,
     category: "modularKitchen"
   },
@@ -55,14 +58,14 @@ const services = [
     title: "Commercial Design",
     description:
       "Creating efficient, functional, and visually appealing commercial spaces.",
-    icon: <Users className="h-6 w-6" />,
+  
     image: commercial,
     category: "commercialDesign"
   },
   {
     title: "Corporate work",
     description: "Transforming outdoor spaces into serene and functional environments.",
-    icon: <Mountain className="h-6 w-6" />,
+  
     image: corporate,
     category: "corporateWork"
   },
@@ -70,21 +73,52 @@ const services = [
     title: "Mandir",
     description:
       "Designing and building beautiful, functional homes that suit your needs.",
-    icon: <Hammer className="h-6 w-6" />,
+ 
     image: mandir,
     category: "mandir"
   },
   {
+    title: "Cottage Work",
+    description:
+      "Designing and building beautiful, functional homes that suit your needs.",
+ 
+    image: cottage,
+    category: "cottageWork"
+  },
+  {
+    title: "Entrance Lobby",
+    description:
+      "Designing and building beautiful, functional homes that suit your needs.",
+ 
+    image: entrance,
+    category: "entranceLobby"
+  },
+  {
+    title: "Facade",
+    description:
+      "Designing and building beautiful, functional homes that suit your needs.",
+ 
+    image: facade,
+    category: "facade"
+  },
+  {
+    title: "Walkin Closet",
+    description:
+      "Designing and building beautiful, functional homes that suit your needs.",
+ 
+    image: closet,
+    category: "walkinCloset"
+  },
+  {
     title: "Architectural Services",
     description: "Crafting innovative structures that prioritize both aesthetics and functionality.",
-    icon: <Building2 className="h-6 w-6" />,
     image: archi,
     category: "allArchitecturalService"
   },
   {
     title: "Pre-Fabrication",
     description: "Expertly constructing pre-fabricated structures with precision and care.",
-    icon: <Home className="h-6 w-6" />,
+
     image: preFab,
     category: "preFabrication"
   },
