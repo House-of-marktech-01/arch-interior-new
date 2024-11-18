@@ -8,6 +8,10 @@ import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import Footer from './components/Footer';
+import Blog101 from './blogs/Blog101';
+import Blog102 from './blogs/Blog102';
+import Blog103 from './blogs/Blog103';
+import Blog104 from './blogs/Blog104';
 
 function App() {
 
@@ -21,6 +25,11 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/101" element={<Blog101 />} />
+          <Route path="/blog/102" element={<Blog102 />} />
+          <Route path="/blog/103" element={<Blog103 />} />
+          <Route path="/blog/104" element={<Blog104 />} />
+          
           <Route path="/contact" element={<Contact />} />
          
         </Routes>

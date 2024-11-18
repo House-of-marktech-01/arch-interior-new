@@ -4,7 +4,7 @@ import logo from "/assets/images/RCH.png";
 import { FaBehance, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="bg-primaryBlack ">
+    <footer className="bg-primaryBlack overflow-hidden">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -93,7 +93,7 @@ export default function Footer() {
               <li className="flex items-center ml-8">
               Station Road, Alwar, Raj, 301001
               </li>
-              <a className="flex items-center hover:text-primaryRed" href="https://wa.me/9999167989">
+              <a className="flex items-center hover:text-primaryRed" href="https://wa.me/+919999167989">
                 <Phone className="mr-2 text-primaryRed" />
                 +91 9999167989
               </a>

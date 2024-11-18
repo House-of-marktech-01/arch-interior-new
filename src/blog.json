@@ -1,26 +1,31 @@
 [
-  {
-    "title": "Blog titile ",
-    "description": "Blog 1 description",
-    "date": "24 October 2024",
-    "author": "author 1",
-    "cover_image": "/assets/images/livingroom1.png",
+  { "id":101,
+    "title": "10 Interior Design Trends to Elevate Your Space in 2024",
+    "date": "18 October 2024",
+    "author": "Yash Gupta",
+    "cover_image": "https://hommes.studio/wp-content/uploads/geral-2-scaled-1.jpg",
     "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur debitis expedita qui dignissimos, libero ipsam consequatur vero voluptatem aliquam necessitatibus hic, aut rem tenetur eligendi quia dolore ipsum nulla. Deserunt incidunt officiis nesciunt delectus."
   },
-  {
-    "title": "Blog titile ",
-    "description": "Blog 1 description",
+  {"id":102,
+    "title": "5 Strategies for Achieving Business Success in 2024",
     "date": "24 October 2024",
-    "author": "author 1",
-    "cover_image": "/assets/images/livingroom3.png",
+    "author": "Yash Gupta",
+    "cover_image": "https://www.imd.org/wp-content/uploads/2023/08/strategy-1024x512.png",
     "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur debitis expedita qui dignissimos, libero ipsam consequatur vero voluptatem aliquam necessitatibus hic, aut rem tenetur eligendi quia dolore ipsum nulla. Deserunt incidunt officiis nesciunt delectus."
   },
-  {
-    "title": "Blog titile ",
-    "description": "Blog 1 description",
-    "date": "24 October 2024",
-    "author": "author 1",
-    "cover_image": "/assets/images/livingroom2.png",
+  {"id":103,
+    "title": "The Role of an Architect in Shaping Modern Communities",
+    "date": "4 November 2024",
+    "author": "Yash Gupta",
+    "cover_image": "https://i0.wp.com/www.re-thinkingthefuture.com/wp-content/uploads/2023/08/A10744-The-Role-of-Architecture-in-Promoting-Social-Interaction-and-Community-Engagement-Image-4.jpg?w=999",
+    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur debitis expedita qui dignissimos, libero ipsam consequatur vero voluptatem aliquam necessitatibus hic, aut rem tenetur eligendi quia dolore ipsum nulla. Deserunt incidunt officiis nesciunt delectus."
+  },
+  {"id":104,
+    "title": "How to Use Color Psychology in Interior Design",
+    "date": "15 November 2024",
+    "author": "Yash Gupta",
+    "cover_image": "https://rkdesigns.in/wp-content/uploads/2024/09/An-interior-design-setting-that-showcases-the-use-of-color-psychology-1600x900.webp",
     "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur debitis expedita qui dignissimos, libero ipsam consequatur vero voluptatem aliquam necessitatibus hic, aut rem tenetur eligendi quia dolore ipsum nulla. Deserunt incidunt officiis nesciunt delectus."
   }
+  
 ]
