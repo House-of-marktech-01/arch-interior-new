@@ -21,7 +21,7 @@ export function Project() {
       setCurrentImageIndex(
         (prevIndex) => (prevIndex + 1) % headerImages.length
       );
-    }, 2000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
