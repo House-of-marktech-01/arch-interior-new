@@ -11,9 +11,7 @@ export function ProjectCard({ props }) {
       <div className="flex justify-between w-full mt-4">
         <div className="flex flex-col w-4/5 text-left justify-center">
           {/* <p className="text-lg font-serif mb-2">{props.project_name}</p> */}
-          <p className="text-sm font-sans text-gray-500">
-            Decor / {props.tag}
-          </p>
+          <p className="text-sm font-sans text-gray-500">Decor / {props.tag}</p>
         </div>
       </div>
     </div>

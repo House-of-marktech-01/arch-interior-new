@@ -1,166 +1,163 @@
 import { motion } from "framer-motion";
 import livingroom from "/assets/images/Commercial Work/08.jpg";
-import profile from "/assets/images/Commercial Work/08.jpg"; 
 import { Users, Target, Award } from "lucide-react";
+import picture from "../../public/assets/images/profile.jpg";
 
 const teamMembers = [
   {
     name: "Yash Gupta",
     role: "Architect, Founder",
-    image: profile,
+    image: picture,
   },
   {
     name: "Himanshu Dhiman",
     role: "Senior Designer",
-    image: profile,
+    image: picture,
   },
   {
     name: "Nikita Singh",
-    role: "3d Visualiser",
-    image: profile,
+    role: "3D Visualiser",
+    image: picture,
   },
   {
     name: "Nitika Sachdeva",
-    role: "3d Visualiser",
-    image: profile,
+    role: "3D Visualiser",
+    image: picture,
   },
   {
     name: "Poonam Sharma",
     role: "Junior Designer",
-    image: profile,
+    image: picture,
   },
 ];
 
 export default function About() {
   return (
-    <div className="min-h-screen ">
-      <header className="">
-        <div className="relative flex items-center justify-center h-[50vh] bg-gray-100">
-          <img
-            src={livingroom} // Replace with your background image path
-            alt="Background"
-            className="absolute inset-0 w-full h-full object-cover "
-          />
-          <div className="relative z-10 flex items-center justify-center w-full h-full bg-black bg-opacity-50  shadow-lg">
-            <div className="text-center">
-              <h1 className="text-6xl mb-4 tracking-wide text-white leading-tight font-cormorant">
-                About Us
-              </h1>
-              <p className="text-xl mb-6 italic font-cormorant text-white">
-                Meet the team that brings the aesthetics to your home.
-              </p>
-            </div>
-          </div>
+    <div className="min-h-screen bg-black text-white">
+      <header className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <motion.img
+          src={livingroom}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover"
+          initial={{ scale: 1.2 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        />
+        <div className="relative z-10 bg-black bg-opacity-50 p-6 text-center">
+          <motion.h1
+            className="text-6xl font-bold tracking-wide text-white"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            About Us
+          </motion.h1>
+          <motion.p
+            className="text-xl italic mt-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2 }}
+          >
+            Meet the team that brings aesthetics to your home.
+          </motion.p>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-
-
+      <main className="max-w-7xl mx-auto py-12 px-6 lg:px-12">
         <motion.section
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6"
+          transition={{ duration: 1 }}
         >
-          <h2 className="text-5xl font-bold text-white mb-4 font-cormorant">
-            Who are we?
-          </h2>
-          <p className="text-lg text-white mb-6">
-          <span className="text-primaryRed">"ARCH SPACE INTERIO"</span> – is a leading designer of a multifaceted firm that work across in architecture, interiors, furniture, lighting, product design with stabile design and landscaping & Industrial Pre Fabrication Work.
+          <h2 className="text-5xl font-bold">Who are we?</h2>
+          <p className="text-lg max-w-3xl mx-auto">
+            <span className="text-primaryRed">{`"ARCH SPACE INTERIO"`}</span> is
+            a leading multifaceted design firm specializing in architecture,
+            interiors, furniture, lighting, and industrial pre-fabrication work.
           </p>
-          <p className="text-lg text-white">
-          Design is usually considered as USP of a project, but it does not mean creating beautiful views rather it should create a “Sense of belonging/ act as part of whole” for the user and the cityscapes.
+          <p className="text-lg text-white mt-4">
+            Design is usually considered as USP of a project, but it does not
+            mean creating beautiful views rather it should create a "Sense of
+            belonging/ act as part of whole" for the user and the cityscapes.
+          </p>
+          <p className="text-lg text-white mt-4">
+            ASI has a creative team of Landscape Planners, Architects, Draftsman
+            and technical staff committed to designing of urban spaces and
+            landscape art. With the diverse disciplines in ASI, we create and
+            design in different realms. Our well-equipped studio and team of
+            highly qualified professionals are well versed with computer-aided
+            design.
+          </p>
+          <p className="text-lg text-white mt-4">
+            Any project here is taken up with an intent to suffice the needs of
+            clients while keeping in mind the design sensibilities.
           </p>
         </motion.section>
+
         <motion.section
-          initial={{ opacity: 0, y: 20 }}
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mb-16"
+          transition={{ duration: 1.2 }}
         >
-          
-          <p className="text-lg text-white mb-6">
-          ASI has a creative team of Landscape Planners, Architects, Draftsman and technical staff committed to designing of urban spaces and landscape art. With the diverse disciplines in ASI, we create and design in different realms. Our well equipped studio and team of highly qualified professionals are well versed with computer aided design.
-          </p>
-          <p className="text-lg text-white">
-          Any project here is taken up with an intent to suffice the needs of client with keeping in mind the design sensibilities.
-          </p>
-        </motion.section>
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mb-16"
-        >
-          <h2 className="text-5xl font-bold text-white mb-8 font-cormorant">
-            Our Team
-          </h2>
+          <h2 className="text-5xl font-bold mb-8">Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
               <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
+                key={index}
+                className="bg-gray-800 p-6 rounded-xl shadow-lg"
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.5 + 0.5 }}
-                className="shadow-xl bg-primaryBlack overflow-hidden "
+                transition={{ duration: 0.4, delay: index * 0.3 }}
+                whileHover={{ scale: 1.05 }}
               >
-                
-                <div className="p-6 bottom-0 ">
-                  <h3 className="text-4xl font-cormorant font-semibold text-white">
-                    {member.name}
-                  </h3>
-                  <p className="text-gray-600">{member.role}</p>
-                </div>
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-4 border-primaryRed"
+                />
+                <h3 className="text-2xl font-semibold">{member.name}</h3>
+                <p className="text-gray-400">{member.role}</p>
               </motion.div>
             ))}
           </div>
         </motion.section>
 
         <motion.section
-          initial={{ opacity: 0, y: 20 }}
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mb-16"
+          transition={{ duration: 1.4 }}
         >
-          <h2 className="text-5xl font-bold text-white mb-8 font-cormorant">
-            Our Values
-          </h2>
+          <h2 className="text-5xl font-bold mb-8">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-black p-6  shadow">
-              <Users className="h-12 w-12 text-primaryRed mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Client-Centric Approach
-              </h3>
-              <p className="text-white">
-                We put our clients needs and vision at the heart of every
+            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+              <Users className="h-12 w-12 text-primaryRed mx-auto mb-4" />
+              <h3 className="text-xl font-semibold">Client-Centric Approach</h3>
+              <p>
+                We put our clients' needs and vision at the heart of every
                 project.
               </p>
             </div>
-            <div className="bg-black p-6  shadow">
-              <Target className="h-12 w-12 text-primaryRed mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Attention to Detail
-              </h3>
-              <p className="text-white">
-                We believe that perfection lies in the details, and we strive
-                for excellence in every aspect of our work.
+            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+              <Target className="h-12 w-12 text-primaryRed mx-auto mb-4" />
+              <h3 className="text-xl font-semibold">Attention to Detail</h3>
+              <p>
+                We believe that perfection lies in the details, striving for
+                excellence in every aspect.
               </p>
             </div>
-            <div className="bg-black p-6  shadow">
-              <Award className="h-12 w-12 text-primaryRed mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Innovation
-              </h3>
-              <p className="text-white">
+            <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
+              <Award className="h-12 w-12 text-primaryRed mx-auto mb-4" />
+              <h3 className="text-xl font-semibold">Innovation</h3>
+              <p>
                 We constantly push the boundaries of design, embracing new ideas
                 and technologies.
               </p>
             </div>
           </div>
         </motion.section>
-
-        
       </main>
     </div>
   );
