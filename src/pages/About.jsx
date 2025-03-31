@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import livingroom from "/assets/images/Commercial Work/08.jpg";
 import { Users, Target, Award } from "lucide-react";
-import picture from "../../public/assets/images/profile.jpg";
+// import picture from "../../public/assets/images/profile.jpg";
+const picture = "/assets/images/profile.jpg";
 
 const teamMembers = [
   {

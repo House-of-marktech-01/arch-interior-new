@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import profile from "../../public/assets/images/profile.jpg";
+const profile = "/assets/images/profile.jpg";
 
 const Testimonials = () => {
   const testimonials = [
