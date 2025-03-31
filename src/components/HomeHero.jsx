@@ -14,20 +14,17 @@ const HomeHero = () => {
       {/* Overlay and Content */}
       <motion.div
         className="relative z-10 flex items-center  w-1/2 h-screen bg-black bg-opacity-70"
-        initial={{ opacity: 0,x:200 }}
-        animate={{ opacity: 1,x:0 }}
+        initial={{ opacity: 0, x: 200 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <div
-          className="w-full text-right px-4 mr-10 space-y-14"
-          
-        >
+        <div className="w-full text-right px-4 mr-10 space-y-14">
           {/* Heading */}
           <motion.h1
             className="text-7xl md:text-9xl mb-4 tracking-wide text-white leading-tight font-cormorant"
             initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
             Your Space
           </motion.h1>
@@ -36,8 +33,8 @@ const HomeHero = () => {
           <motion.p
             className="text-lg md:text-2xl mb-6 italic font-cormorant text-white"
             initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
             Discover a world of creative designs tailored just for you.
           </motion.p>
