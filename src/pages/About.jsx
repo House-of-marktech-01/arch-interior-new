@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import livingroom from "/assets/images/Commercial Work/08.jpg";
 import { Users, Target, Award } from "lucide-react";
-// import picture from "../../public/assets/images/profile.jpg";
 const picture = "/assets/images/profile.jpg";
 
 const teamMembers = [
@@ -33,9 +34,11 @@ const teamMembers = [
 ];
 
 export default function About() {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen bg-black text-white">
-      <header className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 lg:px-12">
+      <header className="relative h-[50vh] flex items-center justify-center overflow-hidden w-full">
         <motion.img
           src={livingroom}
           alt="Background"
@@ -64,36 +67,22 @@ export default function About() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto py-12 px-6 lg:px-12">
+      <main className="max-w-7xl mx-auto py-12 px-6 lg:px-12 text-center">
         <motion.section
-          className="text-center mb-12"
+          className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-5xl font-bold">Who are we?</h2>
-          <p className="text-lg max-w-3xl mx-auto">
-            <span className="text-primaryRed">{`"ARCH SPACE INTERIO"`}</span> is
-            a leading multifaceted design firm specializing in architecture,
-            interiors, furniture, lighting, and industrial pre-fabrication work.
-          </p>
-          <p className="text-lg text-white mt-4">
-            Design is usually considered as USP of a project, but it does not
-            mean creating beautiful views rather it should create a "Sense of
-            belonging/ act as part of whole" for the user and the cityscapes.
-          </p>
-          <p className="text-lg text-white mt-4">
-            ASI has a creative team of Landscape Planners, Architects, Draftsman
-            and technical staff committed to designing of urban spaces and
-            landscape art. With the diverse disciplines in ASI, we create and
-            design in different realms. Our well-equipped studio and team of
-            highly qualified professionals are well versed with computer-aided
-            design.
-          </p>
-          <p className="text-lg text-white mt-4">
-            Any project here is taken up with an intent to suffice the needs of
-            clients while keeping in mind the design sensibilities.
-          </p>
+          <h2 className="text-5xl font-bold mb-6">Who are we?</h2>
+          <div className="flex justify-center">
+            <button
+              onClick={() => navigate("/who-are-we")}
+              className="bg-primaryRed text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center gap-3 hover:bg-red-700 transition-all duration-300"
+            >
+              Know More <ArrowRight size={24} />
+            </button>
+          </div>
         </motion.section>
 
         <motion.section
