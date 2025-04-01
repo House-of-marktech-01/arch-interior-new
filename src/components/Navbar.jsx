@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "/assets/images/RCH.png";
@@ -11,11 +11,26 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all font-cormorant duration-300 bg-transparent `}
+      className={`fixed w-full z-50 transition-all font-cormorant duration-300 ${
+        isScrolled ? "bg-black bg-opacity-90 shadow-lg" : "bg-transparent"
+      }`}
     >
       <div className="mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex items-center justify-between h-16">
@@ -56,7 +71,6 @@ export default function Navbar() {
               >
                 Blog
               </Link>
-              
             </div>
             <Link
               to="/contact"
@@ -77,7 +91,7 @@ export default function Navbar() {
 
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-full text-gray-400 hover:text-primaryRed hover:bg-gray-800"
+              className="inline-flex items-center justify-center p-2 rounded-full text-gray-100 hover:text-primaryRed hover:bg-gray-800"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -119,7 +133,6 @@ export default function Navbar() {
             >
               Blog
             </Link>
-            
           </div>
         </div>
       )}
