@@ -105,7 +105,7 @@ const services = [
 
 export default function ServicesList() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen  ">
       <header>
         <div className="relative flex items-center justify-center h-[50vh]">
           <motion.img
@@ -116,12 +116,12 @@ export default function ServicesList() {
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           />
-          <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+          <div className="relative z-10 bg-black bg-opacity-50 p-6 text-center">
             <motion.h1
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-6xl mb-4 tracking-wide text-white leading-tight font-cormorant drop-shadow-2xl"
+              className="text-5xl font-bold tracking-wide text-white"
             >
               Our Services
             </motion.h1>
@@ -129,7 +129,7 @@ export default function ServicesList() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-xl mb-6 italic font-cormorant text-white drop-shadow-2xl"
+              className="text-xl italic mt-4"
             >
               Discover a world of creative designs tailored just for you.
             </motion.p>
@@ -146,7 +146,10 @@ export default function ServicesList() {
               className="grid grid-cols-1 gap-8 md:grid-cols-2"
             >
               {services.map((service, index) => (
-                <Link to={`/portfolio?category=${service.category}`} key={service.title}>
+                <Link
+                  to={`/portfolio?category=${service.category}`}
+                  key={service.title}
+                >
                   <motion.div
                     key={service.title}
                     initial={{ opacity: 0, y: 50 }}
