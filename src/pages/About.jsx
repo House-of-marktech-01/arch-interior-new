@@ -37,7 +37,7 @@ export default function About() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 lg:px-12">
+    <div className="min-h-screen text-white flex flex-col items-center justify-center px-6 lg:px-12">
       <header className="relative h-[50vh] flex items-center justify-center overflow-hidden w-full">
         <motion.img
           src={livingroom}

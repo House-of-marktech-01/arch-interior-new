@@ -34,7 +34,7 @@ export function Project() {
       ?.items || [];
 
   return (
-    <div className="w-full bg-black text-white min-h-screen">
+    <div className="w-full  text-white min-h-screen">
       {/* Header */}
       <header className="relative">
         <motion.div
