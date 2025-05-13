@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import logo from "/assets/images/RCH.png";
 import { FaBehance, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 export default function Footer() {
   return (
     <footer className="bg-primaryBlack overflow-hidden">
@@ -94,7 +96,7 @@ export default function Footer() {
               Station Road, Alwar, Raj, 301001
               </li>
               <a className="flex items-center hover:text-primaryRed" href="https://wa.me/+919999167989">
-                <Phone className="mr-2 text-primaryRed" />
+                <FontAwesomeIcon icon={faWhatsapp} className="mr-2 text-primaryRed text-[1.5rem]" />
                 +91 9999167989
               </a>
             </ul>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "/assets/images/RCH.png";
+import TopBar from "./TopBar";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function Navbar() {
         isScrolled ? "bg-black bg-opacity-90 shadow-lg" : "bg-transparent"
       }`}
     >
+      <TopBar />
       <div className="mx-auto px-4 sm:px-6 lg:px-16">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
